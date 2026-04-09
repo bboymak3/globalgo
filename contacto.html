@@ -1,0 +1,1133 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+<div id="floating-counter">
+  <i class="fas fa-users"></i> 
+  <span id="live-count">0</span>
+  <div class="label-visitor">Visitantes</div>
+</div>
+
+<style>
+  #floating-counter {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: linear-gradient(135deg, #FFC107 0%, #ff9800 100%);
+    color: #000;
+    padding: 10px 18px;
+    border-radius: 50px;
+    font-weight: 800;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    z-index: 10001;
+    border: 2px solid #fff;
+    cursor: default;
+    animation: pulse-yellow 2s infinite;
+    transition: transform 0.3s ease;
+  }
+
+  #floating-counter:hover {
+    transform: scale(1.1);
+  }
+
+  .label-visitor {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    display: block;
+    line-height: 1;
+    color: #333;
+  }
+
+  @keyframes pulse-yellow {
+    0% { box-shadow: 0 0 0 0 rgba(255, 193, 7, 0.7); }
+    70% { box-shadow: 0 0 0 10px rgba(255, 193, 7, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(255, 193, 7, 0); }
+  }
+
+  @media (max-width: 768px) {
+    #floating-counter {
+      top: 80px;
+      right: 10px;
+      padding: 8px 14px;
+      font-size: 0.9rem;
+    }
+  }
+</style>
+
+<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "41608a73d5524531804ac808fbf45439"}'></script><!-- End Cloudflare Web Analytics -->
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NK35S8FG');</script>
+<!-- End Google Tag Manager -->
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  
+  <link rel="icon" type="image/png" href="images/mecanico-a-domicilio-en-santiago.png"/>
+  <link rel="apple-touch-icon" href="images/mecanico-a-domicilio-en-santiago.png"/>
+
+  <title>Contacto - GlobalPro Automotriz | Mecánico a Domicilio en Santiago</title>
+  <meta name="description" content="Contáctanos para servicio de mecánico a domicilio en Santiago. Llámanos al +56 9 3902 6185, escríbenos por WhatsApp o envíanos un correo a contacto@globalpro.cl. Disponibles 24/7.">
+  <link rel="canonical" href="https://globalpro.pages.dev/contacto.html"/>
+  
+  <meta property="og:title" content="Contacto - GlobalPro Automotriz | Mecánico a Domicilio en Santiago"/>
+  <meta property="og:description" content="Contáctanos para servicio de mecánico a domicilio en Santiago. Llámanos al +56 9 3902 6185, escríbenos por WhatsApp o envíanos un correo. Disponibles 24/7."/>
+  <meta property="og:image" content="https://globalpro.pages.dev/images/mecanico-a-domicilio-en-santiago.png"/>
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+  <meta property="og:url" content="https://globalpro.pages.dev/contacto.html"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:locale" content="es_CL"/>
+  <meta property="og:site_name" content="GlobalPro Automotriz"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="Contacto - GlobalPro Automotriz | Mecánico a Domicilio en Santiago"/>
+  <meta name="twitter:description" content="Contáctanos para servicio de mecánico a domicilio en Santiago. Llámanos, WhatsApp o correo. Disponibles 24/7."/>
+  <meta name="twitter:image" content="https://globalpro.pages.dev/images/mecanico-a-domicilio-en-santiago.png"/>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+  <style>
+    :root {
+      --gp-blood-red: #a80000; 
+      --gp-black: #121212;
+    }
+
+    html { 
+      scroll-behavior: smooth; 
+      scroll-padding-bottom: 120px;
+    }
+    
+    .text-primary { color: var(--gp-blood-red) !important; }
+    
+    .btn-primary {
+      background-color: var(--gp-blood-red) !important;
+      border-color: var(--gp-blood-red) !important;
+      color: white !important;
+    }
+    .btn-primary:hover, .btn-primary:focus {
+      background-color: #800000 !important;
+      border-color: #800000 !important;
+      box-shadow: 0 0 15px rgba(168, 0, 0, 0.4);
+    }
+    
+    .bg-primary { background-color: var(--gp-blood-red) !important; }
+    .border-primary { border-color: var(--gp-blood-red) !important; }
+
+    .nav-link { color: #ccc !important; transition: 0.3s; }
+    .nav-link:hover, .nav-link.active { color: var(--gp-blood-red) !important; }
+
+    .logo-img {
+      background-color: var(--gp-blood-red); 
+      width: 50px; height: 50px; display: flex; align-items: center; justify-content: center;
+      border-radius: 8px; margin-right: 15px; overflow: hidden; 
+      color: white; font-weight: bold; font-size: 1.2rem;
+    }
+    .logo-img img {
+      width: 100%; height: 100%; object-fit: contain; padding: 5px;
+    }
+
+    .logo-text {
+      color: white;
+      font-weight: 800;
+      font-size: 1.3rem;
+      letter-spacing: 2px;
+      line-height: 1.1;
+    }
+    .logo-subtext {
+      color: #aaa;
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .whatsapp-btn {
+      color: #25D366 !important;
+      font-weight: 600;
+      transition: 0.3s;
+      text-decoration: none;
+    }
+    .whatsapp-btn:hover {
+      color: #128C7E !important;
+    }
+
+    body, .navbar, .container, .container-fluid {
+      overflow-x: hidden !important;
+      max-width: 100%;
+    }
+    .nav-container {
+      padding: 0 15px;
+    }
+
+    /* HERO CONTACTO */
+    .hero-contacto {
+      background: linear-gradient(135deg, rgba(18,18,18,0.92) 0%, rgba(168,0,0,0.85) 100%), url('images/image1.jpg') center/cover no-repeat;
+      min-height: 55vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      padding-top: 100px;
+      padding-bottom: 60px;
+    }
+    .hero-contacto h1 {
+      font-size: 3rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      margin-bottom: 1rem;
+    }
+    .hero-contacto p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 0 auto;
+      opacity: 0.9;
+    }
+
+    /* CONTACT CARDS */
+    .contact-card {
+      border: none;
+      border-radius: 15px;
+      overflow: hidden;
+      transition: transform 0.3s, box-shadow 0.3s;
+      background: white;
+      height: 100%;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+      cursor: pointer;
+    }
+    .contact-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+    }
+    .contact-card-icon {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.8rem;
+      color: white;
+      margin: 0 auto 1.2rem;
+    }
+    .contact-card h5 {
+      font-weight: 700;
+      color: #333;
+      margin-bottom: 0.5rem;
+    }
+    .contact-card p {
+      color: #666;
+      font-size: 0.95rem;
+      margin-bottom: 1rem;
+    }
+    .contact-card a {
+      font-weight: 600;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    /* CONTACT FORM */
+    .contact-form-section {
+      background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+      padding: 80px 0;
+    }
+    .contact-form-card {
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+      padding: 40px;
+      border-top: 5px solid var(--gp-blood-red);
+    }
+    .contact-form-card .form-control,
+    .contact-form-card .form-select {
+      border-radius: 10px;
+      border: 2px solid #e0e0e0;
+      padding: 12px 16px;
+      font-size: 1rem;
+      transition: border-color 0.3s, box-shadow 0.3s;
+    }
+    .contact-form-card .form-control:focus,
+    .contact-form-card .form-select:focus {
+      border-color: var(--gp-blood-red);
+      box-shadow: 0 0 0 0.25rem rgba(168, 0, 0, 0.15);
+    }
+    .contact-form-card label {
+      font-weight: 600;
+      color: #333;
+      margin-bottom: 6px;
+    }
+    .btn-submit {
+      background-color: var(--gp-blood-red);
+      border: none;
+      color: white;
+      padding: 14px 40px;
+      font-size: 1.1rem;
+      font-weight: 700;
+      border-radius: 10px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      transition: 0.3s;
+    }
+    .btn-submit:hover {
+      background-color: #800000;
+      color: white;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(168, 0, 0, 0.3);
+    }
+
+    /* MAP SECTION */
+    .map-section {
+      padding: 80px 0;
+    }
+    .map-container {
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+      border: 4px solid var(--gp-blood-red);
+    }
+    .map-container iframe {
+      width: 100%;
+      height: 400px;
+      border: none;
+    }
+
+    /* HOURS SECTION */
+    .hours-section {
+      background-color: var(--gp-black);
+      padding: 60px 0;
+      color: white;
+    }
+    .hours-card {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 15px;
+      padding: 40px;
+      text-align: center;
+    }
+    .hours-icon {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background: var(--gp-blood-red);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 1.5rem;
+      font-size: 2rem;
+      animation: pulse-red 2s infinite;
+    }
+    @keyframes pulse-red {
+      0% { box-shadow: 0 0 0 0 rgba(211, 47, 47, 0.7); }
+      70% { box-shadow: 0 0 0 15px rgba(211, 47, 47, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(211, 47, 47, 0); }
+    }
+    .hours-card h3 {
+      font-weight: 800;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+    .hours-badge {
+      display: inline-block;
+      background: #25D366;
+      color: white;
+      padding: 8px 24px;
+      border-radius: 50px;
+      font-weight: 700;
+      font-size: 1.2rem;
+      margin-top: 1rem;
+    }
+
+    /* STICKY BOTTOM BAR */
+    .sticky-bottom-bar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 90px;
+      background-color: var(--gp-black);
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0 15px;
+      z-index: 9999;
+      box-shadow: 0 -4px 15px rgba(0,0,0,0.6);
+      border-top: 3px solid var(--gp-blood-red);
+    }
+
+    .big-buttons-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      max-width: 100%; 
+      gap: 10px;
+      height: 100%;
+    }
+
+    .btn-massive-call {
+      flex: 1;
+      height: 70px;
+      background-color: #D32F2F;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-size: 1.5rem;
+      font-weight: 800;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+      text-transform: uppercase;
+      transition: transform 0.2s, background-color 0.2s;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+      animation: pulse-call 2s infinite;
+    }
+
+    @keyframes pulse-call {
+      0% { box-shadow: 0 0 0 0 rgba(211, 47, 47, 0.7); }
+      70% { box-shadow: 0 0 0 10px rgba(211, 47, 47, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(211, 47, 47, 0); }
+    }
+
+    .btn-massive-call:hover {
+      transform: scale(1.02);
+      background-color: #b71c1c;
+      color: white;
+    }
+
+    .btn-massive-wa {
+      flex: 1;
+      height: 70px;
+      background-color: #25D366;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-size: 1.2rem;
+      font-weight: 700;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      transition: transform 0.2s, background-color 0.2s;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    }
+
+    .btn-massive-wa:hover {
+      transform: scale(1.02);
+      background-color: #1ebc57;
+      color: white;
+    }
+
+    .btn-small-chat {
+      width: 50px;
+      height: 50px;
+      background-color: #FFC107;
+      color: black;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      text-decoration: none;
+      flex-shrink: 0;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+      border: 2px solid white;
+      z-index: 10;
+    }
+    .btn-small-chat:hover {
+      background-color: #ffca2c;
+      transform: scale(1.1);
+    }
+
+    @media (min-width: 992px) {
+      .sticky-bottom-bar {
+        height: 100px;
+        padding: 0 50px;
+      }
+      .big-buttons-container {
+        max-width: 1200px;
+      }
+      .btn-massive-call, .btn-massive-wa {
+        font-size: 1.8rem;
+        height: 80px;
+      }
+    }
+
+    /* FOOTER */
+    .main-footer {
+      background-color: #000;
+      color: #bbb;
+      padding: 60px 0 20px 0;
+      font-size: 0.9rem;
+      border-top: 4px solid var(--gp-blood-red);
+    }
+    
+    .footer-logo-box {
+      background-color: var(--gp-blood-red);
+      width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+    .footer-logo-box i {
+      font-size: 1.8rem;
+      color: white;
+    }
+
+    .footer-title {
+      color: white;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+      font-size: 1.1rem;
+      border-bottom: 2px solid var(--gp-blood-red);
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    .footer-links ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    
+    .footer-links li {
+      margin-bottom: 10px;
+    }
+    
+    .footer-links a {
+      color: #bbb;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    
+    .footer-links a:hover {
+      color: var(--gp-blood-red);
+      padding-left: 5px;
+    }
+
+    .contact-info-item {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 15px;
+    }
+    
+    .contact-info-item i {
+      color: var(--gp-blood-red);
+      margin-right: 10px;
+      margin-top: 5px;
+    }
+
+    .social-icons a {
+      display: inline-flex;
+      width: 35px;
+      height: 35px;
+      background-color: #333;
+      color: white;
+      border-radius: 50%;
+      align-items: center;
+      justify-content: center;
+      margin-right: 10px;
+      transition: 0.3s;
+      text-decoration: none;
+    }
+    
+    .social-icons a:hover {
+      background-color: var(--gp-blood-red);
+      transform: translateY(-3px);
+    }
+
+    .copyright-bar {
+      background-color: #0a0a0a;
+      padding: 15px 0;
+      margin-top: 40px;
+      border-top: 1px solid #333;
+      text-align: center;
+      font-size: 0.85rem;
+    }
+
+    /* SECTION TITLE */
+    .section-title-contact {
+      font-size: 2rem;
+      font-weight: 800;
+      color: var(--gp-blood-red);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 0.5rem;
+    }
+    .section-subtitle-contact {
+      color: #666;
+      font-size: 1.1rem;
+      max-width: 600px;
+      margin: 0 auto 3rem;
+    }
+
+    /* Padding bottom for sticky bar */
+    .pb-sticky {
+      padding-bottom: 110px;
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "name": "Contacto - GlobalPro Automotriz",
+    "description": "Página de contacto de GlobalPro Automotriz. Mecánico a domicilio en Santiago, Chile. Disponibles 24/7.",
+    "url": "https://globalpro.pages.dev/contacto.html",
+    "mainEntity": {
+      "@type": "LocalBusiness",
+      "name": "GLOBAL PRO Automotriz",
+      "image": "https://globalpro.pages.dev/images/mecanico-a-domicilio-en-santiago.png",
+      "telephone": "+56 9 3902 6185",
+      "email": "contacto@globalpro.cl",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Av. Padre Alberto Hurtado 3598",
+        "addressLocality": "Pedro Aguirre Cerda",
+        "addressRegion": "Región Metropolitana",
+        "postalCode": "1080000",
+        "addressCountry": "CL"
+      },
+      "url": "https://globalpro.pages.dev",
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"
+        ],
+        "opens": "00:00",
+        "closes": "23:59"
+      }
+    }
+  }
+  </script>
+</head>
+<body>
+
+<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "41608a73d5524531804ac808fbf45439"}'></script><!-- End Cloudflare Web Analytics -->
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NK35S8FG"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+<!-- ======================================================================= -->
+<!-- NAVBAR -->
+<!-- ======================================================================= -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <div class="container nav-container">
+    <a href="index.html" class="logo d-flex align-items-center text-decoration-none text-white">
+      <!-- LOGO: CAJA ROJO SANGRE -->
+      <div class="logo-img">
+        <i class="fas fa-wrench"></i>
+      </div>
+      <div>
+        <div class="logo-text">GLOBALPRO</div>
+        <div class="logo-subtext">Taller Mecánico</div>
+      </div>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse desktop-menu" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html#mecanico-domicilio-seo">Mecánico a Domicilio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html#servicios">Servicios</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="comunasDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Comunas
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="comunasDropdown" style="max-height: 400px; overflow-y: auto;">
+            <li><a class="dropdown-item" href="contacto.html">Alhué</a></li><li><a class="dropdown-item" href="contacto.html">Buin</a></li><li><a class="dropdown-item" href="contacto.html">Calera de Tango</a></li><li><a class="dropdown-item" href="contacto.html">Cerrillos</a></li><li><a class="dropdown-item" href="contacto.html">Cerro Navia</a></li><li><a class="dropdown-item" href="contacto.html">Colina</a></li><li><a class="dropdown-item" href="contacto.html">Conchalí</a></li><li><a class="dropdown-item" href="contacto.html">Curacaví</a></li><li><a class="dropdown-item" href="contacto.html">El Bosque</a></li><li><a class="dropdown-item" href="contacto.html">El Monte</a></li><li><a class="dropdown-item" href="contacto.html">Estación Central</a></li><li><a class="dropdown-item" href="contacto.html">Huechuraba</a></li><li><a class="dropdown-item" href="contacto.html">Independencia</a></li><li><a class="dropdown-item" href="contacto.html">Isla de Maipo</a></li><li><a class="dropdown-item" href="contacto.html">La Cisterna</a></li><li><a class="dropdown-item" href="contacto.html">La Florida</a></li><li><a class="dropdown-item" href="contacto.html">La Granja</a></li><li><a class="dropdown-item" href="contacto.html">La Pintana</a></li><li><a class="dropdown-item" href="contacto.html">La Reina</a></li><li><a class="dropdown-item" href="contacto.html">Las Condes</a></li><li><a class="dropdown-item" href="contacto.html">Lampa</a></li><li><a class="dropdown-item" href="contacto.html">Lo Barnechea</a></li><li><a class="dropdown-item" href="contacto.html">Lo Espejo</a></li><li><a class="dropdown-item" href="contacto.html">Lo Prado</a></li><li><a class="dropdown-item" href="contacto.html">Macul</a></li><li><a class="dropdown-item" href="contacto.html">Maipú</a></li><li><a class="dropdown-item" href="contacto.html">María Pinto</a></li><li><a class="dropdown-item" href="contacto.html">Melipilla</a></li><li><a class="dropdown-item" href="contacto.html">Ñuñoa</a></li><li><a class="dropdown-item" href="contacto.html">Padre Hurtado</a></li><li><a class="dropdown-item" href="contacto.html">Paine</a></li><li><a class="dropdown-item" href="contacto.html">Pedro Aguirre Cerda</a></li><li><a class="dropdown-item" href="contacto.html">Peñaflor</a></li><li><a class="dropdown-item" href="contacto.html">Peñalolén</a></li><li><a class="dropdown-item" href="contacto.html">Pirque</a></li><li><a class="dropdown-item" href="contacto.html">Providencia</a></li><li><a class="dropdown-item" href="contacto.html">Pudahuel</a></li><li><a class="dropdown-item" href="contacto.html">Puente Alto</a></li><li><a class="dropdown-item" href="contacto.html">Quilicura</a></li><li><a class="dropdown-item" href="contacto.html">Quinta Normal</a></li><li><a class="dropdown-item" href="contacto.html">Recoleta</a></li><li><a class="dropdown-item" href="contacto.html">Renca</a></li><li><a class="dropdown-item" href="contacto.html">San Bernardo</a></li><li><a class="dropdown-item" href="contacto.html">San Joaquín</a></li><li><a class="dropdown-item" href="contacto.html">San José de Maipo</a></li><li><a class="dropdown-item" href="contacto.html">San Miguel</a></li><li><a class="dropdown-item" href="contacto.html">San Pedro</a></li><li><a class="dropdown-item" href="contacto.html">San Ramón</a></li><li><a class="dropdown-item" href="contacto.html">Santiago</a></li><li><a class="dropdown-item" href="contacto.html">Talagante</a></li><li><a class="dropdown-item" href="contacto.html">Tiltil</a></li><li><a class="dropdown-item" href="contacto.html">Vitacura</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="quienes-somos.html">Quiénes Somos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="contacto.html">Contacto</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="blog/index.html">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="faq.html">FAQ</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="politica-privacidad.html">Privacidad</a>
+        </li>
+        <li class="nav-item">
+          <a href="https://wa.me/56939026185" class="whatsapp-btn" target="_blank">
+            <i class="fab fa-whatsapp me-2"></i> WhatsApp
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- ======================================================================= -->
+<!-- FIN NAVBAR -->
+<!-- ======================================================================= -->
+
+
+<!-- ======================================================================= -->
+<!-- HERO CONTACTO -->
+<!-- ======================================================================= -->
+<section class="hero-contacto">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <h1><i class="fas fa-headset me-3"></i>Contáctanos</h1>
+        <p>Estamos disponibles las 24 horas, los 7 días de la semana. Llámanos, escríbenos por WhatsApp o visita nuestro taller. ¡Tu vehículo en las mejores manos!</p>
+        <div class="mt-4">
+          <a href="tel:+56939026185" class="btn btn-primary btn-lg me-2"><i class="fas fa-phone-alt me-2"></i>Llamar Ahora</a>
+          <a href="https://wa.me/56939026185?text=Hola%20te%20escribo%20desde%20la%20página%20web%20estoy%20interesado%20en%20tus%20servicios" class="btn btn-lg me-2" style="background-color:#25D366;color:white;border:none;border-radius:8px;font-weight:700;" target="_blank"><i class="fab fa-whatsapp me-2"></i>WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ======================================================================= -->
+<!-- FIN HERO CONTACTO -->
+<!-- ======================================================================= -->
+
+
+<!-- ======================================================================= -->
+<!-- MÉTODOS DE CONTACTO -->
+<!-- ======================================================================= -->
+<section class="py-5 bg-white" id="metodos-contacto">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="section-title-contact">Elige Cómo Contactarnos</h2>
+      <p class="section-subtitle-contact">Múltiples opciones para que nos reachen fácil y rápidamente. Atención inmediata garantizada.</p>
+    </div>
+
+    <div class="row g-4 justify-content-center">
+      <!-- TARJETA: TELÉFONO -->
+      <div class="col-md-6 col-lg-3">
+        <a href="tel:+56939026185" class="text-decoration-none">
+          <div class="contact-card p-4 text-center">
+            <div class="contact-card-icon" style="background: linear-gradient(135deg, #D32F2F, #a80000);">
+              <i class="fas fa-phone-alt"></i>
+            </div>
+            <h5>Llámanos</h5>
+            <p>Habla directamente con nuestro equipo de atención al cliente.</p>
+            <span class="text-primary fw-bold" style="font-size:1.1rem;">+56 9 3902 6185</span>
+          </div>
+        </a>
+      </div>
+
+      <!-- TARJETA: WHATSAPP -->
+      <div class="col-md-6 col-lg-3">
+        <a href="https://wa.me/56939026185?text=Hola%20te%20escribo%20desde%20la%20página%20web%20estoy%20interesado%20en%20tus%20servicios" class="text-decoration-none" target="_blank">
+          <div class="contact-card p-4 text-center">
+            <div class="contact-card-icon" style="background: linear-gradient(135deg, #25D366, #128C7E);">
+              <i class="fab fa-whatsapp"></i>
+            </div>
+            <h5>WhatsApp</h5>
+            <p>Escríbenos y recibe respuesta inmediata. Envía fotos de tu vehículo.</p>
+            <span style="color:#25D366; font-weight:700; font-size:1.1rem;">Enviar Mensaje</span>
+          </div>
+        </a>
+      </div>
+
+      <!-- TARJETA: EMAIL -->
+      <div class="col-md-6 col-lg-3">
+        <a href="mailto:contacto@globalpro.cl" class="text-decoration-none">
+          <div class="contact-card p-4 text-center">
+            <div class="contact-card-icon" style="background: linear-gradient(135deg, #FF9800, #F57C00);">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <h5>Email</h5>
+            <p>Para cotizaciones formales, consultas o información detallada.</p>
+            <span style="color:#FF9800; font-weight:700; font-size:1.1rem;">contacto@globalpro.cl</span>
+          </div>
+        </a>
+      </div>
+
+      <!-- TARJETA: DIRECCIÓN -->
+      <div class="col-md-6 col-lg-3">
+        <a href="https://www.google.com/maps/search/Av.+Padre+Alberto+Hurtado+3598,+Pedro+Aguirre+Cerda,+Chile" class="text-decoration-none" target="_blank">
+          <div class="contact-card p-4 text-center">
+            <div class="contact-card-icon" style="background: linear-gradient(135deg, #2196F3, #1565C0);">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <h5>Visítanos</h5>
+            <p>Nuestro taller está ubicado en Pedro Aguirre Cerda, Santiago.</p>
+            <span style="color:#2196F3; font-weight:700; font-size:1rem;">Ver en Google Maps</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ======================================================================= -->
+<!-- FIN MÉTODOS DE CONTACTO -->
+<!-- ======================================================================= -->
+
+
+<!-- ======================================================================= -->
+<!-- GOOGLE MAPS -->
+<!-- ======================================================================= -->
+<section class="map-section bg-light" id="ubicacion">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="section-title-contact">Nuestra Ubicación</h2>
+      <p class="section-subtitle-contact">Av. Padre Alberto Hurtado 3598, Pedro Aguirre Cerda, Región Metropolitana, Chile</p>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+        <div class="map-container">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3331.2!2d-70.66!3d-33.52!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sAv.+Padre+Alberto+Hurtado+3598%2C+Pedro+Aguirre+Cerda!5e0!3m2!1ses!2scl!4v1700000000000!5m2!1ses!2scl" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Ubicación de GlobalPro Automotriz en Google Maps">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ======================================================================= -->
+<!-- FIN GOOGLE MAPS -->
+<!-- ======================================================================= -->
+
+
+<!-- ======================================================================= -->
+<!-- FORMULARIO DE CONTACTO -->
+<!-- ======================================================================= -->
+<section class="contact-form-section" id="formulario-contacto">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="section-title-contact">Envíanos un Mensaje</h2>
+      <p class="section-subtitle-contact">Cuéntanos sobre tu vehículo y el servicio que necesitas. Te responderemos a la brevedad.</p>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="contact-form-card">
+          <form id="contactForm" action="https://formsubmit.co/contacto@globalpro.cl" method="POST">
+            <!-- FormSubmit config -->
+            <input type="hidden" name="_subject" value="Nuevo mensaje desde GlobalPro - Contacto Web">
+            <input type="hidden" name="_template" value="box">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="https://globalpro.pages.dev/contacto.html">
+            
+            <div class="row g-3">
+              <!-- NOMBRE -->
+              <div class="col-md-6">
+                <label for="nombre" class="form-label"><i class="fas fa-user text-primary me-1"></i> Nombre Completo</label>
+                <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ej: Juan Pérez" required>
+              </div>
+
+              <!-- TELÉFONO -->
+              <div class="col-md-6">
+                <label for="telefono" class="form-label"><i class="fas fa-phone text-primary me-1"></i> Teléfono</label>
+                <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="Ej: +56 9 1234 5678" required>
+              </div>
+
+              <!-- EMAIL -->
+              <div class="col-md-6">
+                <label for="email" class="form-label"><i class="fas fa-envelope text-primary me-1"></i> Email</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Ej: tu@email.com" required>
+              </div>
+
+              <!-- MARCA/MODELO -->
+              <div class="col-md-6">
+                <label for="vehiculo" class="form-label"><i class="fas fa-car text-primary me-1"></i> Marca y Modelo del Vehículo</label>
+                <input type="text" class="form-control" id="vehiculo" name="vehiculo" placeholder="Ej: Toyota Corolla 2020">
+              </div>
+
+              <!-- SERVICIO NECESITADO -->
+              <div class="col-12">
+                <label for="servicio" class="form-label"><i class="fas fa-wrench text-primary me-1"></i> Servicio Necesitado</label>
+                <select class="form-select" id="servicio" name="servicio" required>
+                  <option value="" selected disabled>Selecciona un servicio...</option>
+                  <option value="Mecánica General">Mecánica General</option>
+                  <option value="Diagnóstico Computarizado">Diagnóstico Computarizado</option>
+                  <option value="Cambio de Aceite y Filtros">Cambio de Aceite y Filtros</option>
+                  <option value="Reparación de Frenos">Reparación de Frenos</option>
+                  <option value="Reparación de Suspensión">Reparación de Suspensión</option>
+                  <option value="Sistema Eléctrico">Sistema Eléctrico</option>
+                  <option value="Cambio de Batería">Cambio de Batería</option>
+                  <option value="Reparación de Motor">Reparación de Motor</option>
+                  <option value="Reparación de Transmisión/Caja">Reparación de Transmisión/Caja</option>
+                  <option value="Aire Acondicionado">Aire Acondicionado</option>
+                  <option value="Revisión Técnica">Revisión Técnica</option>
+                  <option value="Mantención Preventiva">Mantención Preventiva</option>
+                  <option value="Electromecánica">Electromecánica</option>
+                  <option value="Soldadura y Estructura">Soldadura y Estructura</option>
+                  <option value="Asistencia en Ruta / Emergencia">Asistencia en Ruta / Emergencia</option>
+                  <option value="Inspección Pre-compra">Inspección Pre-compra</option>
+                  <option value="Otro">Otro</option>
+                </select>
+              </div>
+
+              <!-- MENSAJE -->
+              <div class="col-12">
+                <label for="mensaje" class="form-label"><i class="fas fa-comment-dots text-primary me-1"></i> Mensaje</label>
+                <textarea class="form-control" id="mensaje" name="mensaje" rows="5" placeholder="Describe el problema de tu vehículo o lo que necesitas..." required></textarea>
+              </div>
+
+              <!-- BOTÓN ENVIAR -->
+              <div class="col-12 text-center mt-4">
+                <button type="submit" class="btn btn-submit">
+                  <i class="fas fa-paper-plane me-2"></i> Enviar Mensaje
+                </button>
+                <p class="small text-muted mt-3 mb-0"><i class="fas fa-lock me-1"></i> Tu información está segura con nosotros.</p>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ======================================================================= -->
+<!-- FIN FORMULARIO DE CONTACTO -->
+<!-- ======================================================================= -->
+
+
+<!-- ======================================================================= -->
+<!-- HORARIO DE ATENCIÓN -->
+<!-- ======================================================================= -->
+<section class="hours-section" id="horarios">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="hours-card">
+          <div class="hours-icon">
+            <i class="fas fa-clock"></i>
+          </div>
+          <h3>Horario de Atención</h3>
+          <p style="font-size:1.3rem; opacity:0.9; margin-bottom:0.5rem;">
+            <i class="fas fa-calendar-alt me-2"></i>Lunes a Domingo
+          </p>
+          <p style="font-size:2.5rem; font-weight:800; margin-bottom:1rem;">
+            00:00 - 24:00
+          </p>
+          <div class="hours-badge">
+            <i class="fas fa-check-circle me-2"></i> ABIERTO LAS 24 HORAS
+          </div>
+          <p class="mt-3 mb-0" style="opacity:0.7; font-size:0.95rem;">
+            Emergencias mecánicas en cualquier momento del día o la noche.<br>
+            Llámanos al <strong>+56 9 3902 6185</strong> o escríbenos por WhatsApp.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ======================================================================= -->
+<!-- FIN HORARIO DE ATENCIÓN -->
+<!-- ======================================================================= -->
+
+
+<!-- ======================================================================= -->
+<!-- CTA RÁPIDO ANTES DEL FOOTER -->
+<!-- ======================================================================= -->
+<section class="py-5 bg-white">
+  <div class="container">
+    <div class="text-center">
+      <h2 style="font-weight:800; color:#333; text-transform:uppercase; margin-bottom:1rem;">
+        ¿Necesitas un mecánico <span style="color:var(--gp-blood-red);">AHORA MISMO</span>?
+      </h2>
+      <p style="color:#666; font-size:1.1rem; max-width:600px; margin:0 auto 2rem;">
+        No esperes más. Nuestro equipo está listo para ayudarte en cualquier momento y lugar de Santiago.
+      </p>
+      <div class="d-flex flex-wrap justify-content-center gap-3">
+        <a href="tel:+56939026185" class="btn btn-primary btn-lg" style="font-weight:700; border-radius:10px; padding:15px 40px;">
+          <i class="fas fa-phone-alt me-2"></i> LLAMAR AHORA
+        </a>
+        <a href="https://wa.me/56939026185?text=Hola%20necesito%20un%20mecánico%20de%20urgencia" class="btn btn-lg" style="background-color:#25D366;color:white;border:none;border-radius:10px;font-weight:700;padding:15px 40px;" target="_blank">
+          <i class="fab fa-whatsapp me-2"></i> WHATSAPP DE EMERGENCIA
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ======================================================================= -->
+<!-- FOOTER -->
+<!-- ======================================================================= -->
+<footer class="main-footer">
+  <div class="container">
+    <div class="row">
+      <!-- COLUMNA 1: SOBRE NOSOTROS -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="footer-logo-box">
+          <i class="fas fa-wrench"></i>
+        </div>
+        <h5 class="footer-title">GlobalPro</h5>
+        <p class="text-justify">
+          Somos líderes en <strong>Mecánico a Domicilio</strong> en Santiago. Ofrecemos servicio automotriz integral con tecnología de punta y profesionales certificados. Tu vehículo en las mejores manos, donde tú estés.
+        </p>
+        <div class="social-icons mt-3">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="https://wa.me/56939026185" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <!-- COLUMNA 2: ENLACES RÁPIDOS -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <h5 class="footer-title">Enlaces Rápidos</h5>
+        <div class="footer-links">
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="index.html#mecanico-domicilio-seo">Mecánico a Domicilio</a></li>
+            <li><a href="index.html#servicios">Nuestros Servicios</a></li>
+            <li><a href="faq.html">Preguntas Frecuentes</a></li>
+            <li><a href="quienes-somos.html">Quiénes Somos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- COLUMNA 3: CONTACTO -->
+      <div class="col-lg-4 col-md-12 mb-4">
+        <h5 class="footer-title">Información de Contacto</h5>
+        
+        <div class="contact-info-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <div>
+            <strong>Ubicación:</strong><br>
+            Av. Padre Alberto Hurtado 3598<br>
+            Pedro Aguirre Cerda, RM, Chile
+          </div>
+        </div>
+
+        <div class="contact-info-item">
+          <i class="fas fa-phone-alt"></i>
+          <div>
+            <strong>Teléfono:</strong><br>
+            <a href="tel:+56939026185" style="color:#bbb; text-decoration:none;">+56 9 3902 6185</a>
+          </div>
+        </div>
+
+        <div class="contact-info-item">
+          <i class="fab fa-whatsapp"></i>
+          <div>
+            <strong>WhatsApp:</strong><br>
+            <a href="https://wa.me/56939026185" style="color:#bbb; text-decoration:none;" target="_blank">+56 9 3902 6185</a>
+          </div>
+        </div>
+
+        <div class="contact-info-item">
+          <i class="fas fa-envelope"></i>
+          <div>
+            <strong>Email:</strong><br>
+            <a href="mailto:contacto@globalpro.cl" style="color:#bbb; text-decoration:none;">contacto@globalpro.cl</a>
+          </div>
+        </div>
+
+        <div class="contact-info-item">
+          <i class="fas fa-clock"></i>
+          <div>
+            <strong>Horario:</strong><br>
+            <span style="color:#25D366; font-weight:700;">Abierto las 24 horas</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- BARRA DE COPYRIGHT -->
+  <div class="copyright-bar">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 text-center text-md-start">
+          &copy; 2024 GlobalPro Automotriz. Todos los derechos reservados.
+        </div>
+        <div class="col-md-6 text-center text-md-end">
+          Especialistas en <strong>Mecánico a Domicilio</strong> | Servicio Automotriz Integral
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- ======================================================================= -->
+<!-- FIN FOOTER -->
+<!-- ======================================================================= -->
+
+
+<!-- ======================================================================= -->
+<!-- FOOTER INFERIOR FIJO (STICKY BOTTOM BAR) -->
+<!-- ======================================================================= -->
+<div class="sticky-bottom-bar">
+  <div class="big-buttons-container">
+    
+    <!-- Botón Llamada (Rojo Grande) -->
+    <a href="tel:+56939026185" class="btn-massive-call">
+      <i class="fas fa-phone-alt"></i> LLAMAR
+    </a>
+
+    <!-- Botón Chat IA (Centro Pequeño) -->
+    <a href="index.html" class="btn-small-chat" title="Inicio">
+      <i class="fas fa-home"></i>
+    </a>
+
+    <!-- Botón WhatsApp (Verde Grande) -->
+    <a href="https://wa.me/56939026185?text=Hola%20te%20escribo%20desde%20la%20página%20web%20estoy%20interesado%20en%20tus%20servicios" class="btn-massive-wa" target="_blank">
+      <i class="fab fa-whatsapp"></i> WhatsApp
+    </a>
+
+  </div>
+</div>
+<!-- ======================================================================= -->
+<!-- FIN FOOTER INFERIOR FIJO -->
+<!-- ======================================================================= -->
+
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Live Counter Script -->
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const counterElement = document.getElementById('live-count');
+    
+    let baseVisitas = 123; 
+    
+    let visitasGuardadas = localStorage.getItem('global_total_visits');
+    
+    if (!visitasGuardadas) {
+      visitasGuardadas = baseVisitas;
+    } else {
+      visitasGuardadas = parseInt(visitasGuardadas);
+    }
+
+    if (!sessionStorage.getItem('session_active')) {
+      visitasGuardadas += 1;
+      localStorage.setItem('global_total_visits', visitasGuardadas);
+      sessionStorage.setItem('session_active', 'true');
+    }
+
+    counterElement.innerText = visitasGuardadas.toLocaleString('es-CL');
+  });
+</script>
+
+</body>
+</html>

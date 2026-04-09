@@ -1,0 +1,535 @@
+/* --- Variables y Estilos Globales --- */
+:root {
+    --primary-color: #0d6efd; /* Azul Bootstrap */
+    --secondary-color: #6c757d; /* Gris Bootstrap */
+    --accent-color: #ffc107;   /* Amarillo para resaltar */
+    --dark-color: #212529;
+    --light-color: #f8f9fa;
+    --font-family: 'Poppins', sans-serif;
+}
+
+body {
+    font-family: var(--font-family);
+    color: var(--dark-color);
+    padding-top: 80px; /* Offset for fixed navbar */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+}
+
+.text-accent {
+    color: var(--accent-color) !important;
+}
+
+/* --- Navbar --- */
+.navbar {
+    background-color: rgba(33, 37, 41, 0.95);
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease-in-out;
+    padding: 10px 0;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+
+.logo-img {
+    background-color: var(--primary-color);
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    margin-right: 15px;
+    font-size: 1.2rem;
+}
+
+.logo-text {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.logo-subtext {
+    font-size: 0.8rem;
+    color: var(--accent-color);
+}
+
+.nav-link {
+    font-weight: 500;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: var(--accent-color) !important;
+}
+
+.whatsapp-btn {
+    background-color: #25d366;
+    border-color: #25d366;
+    color: white;
+    font-weight: 500;
+    padding: 8px 20px;
+    border-radius: 50px;
+}
+
+.whatsapp-btn:hover {
+    background-color: #128c7e;
+    border-color: #128c7e;
+    color: white;
+}
+
+/* --- Hero Section --- */
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/image1.jpg') no-repeat center center/cover;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    color: white;
+}
+
+.hero-badge {
+    background-color: var(--accent-color);
+    color: var(--dark-color);
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.hero-title {
+    font-weight: 700;
+    font-size: 3.5rem;
+    line-height: 1.2;
+    margin-top: 20px;
+}
+
+.hero-subtitle {
+    font-size: 1.2rem;
+    max-width: 500px;
+    margin: 20px 0;
+}
+
+.stats-container {
+    margin-top: 40px;
+}
+
+.stat-item {
+    padding: 15px;
+}
+
+.stat-number {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--accent-color);
+}
+
+.stat-label {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+
+/* --- Sections --- */
+.services-section, .why-us-section {
+    padding: 80px 0;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.section-subtitle {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 60px auto;
+    color: var(--secondary-color);
+}
+
+/* --- Service Cards --- */
+.service-card {
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+}
+
+.service-card .card-body {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.service-icon {
+    width: 80px;
+    height: 80px;
+    background-color: var(--light-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: var(--primary-color);
+    transition: background-color 0.3s, color 0.3s;
+    margin: 0 auto 20px auto;
+}
+
+.service-card:hover .service-icon {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.service-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.service-card p {
+    text-align: center;
+    flex-grow: 1;
+}
+
+.service-card .btn {
+    align-self: center;
+}
+
+/* --- Contact Section --- */
+.contact-section {
+    background-color: var(--dark-color);
+    padding: 80px 0;
+    color: white;
+}
+
+.contact-form {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.contact-form .form-label {
+    color: var(--dark-color);
+    font-weight: 500;
+}
+
+.contact-form .form-control, .contact-form .form-select {
+    border-radius: 8px;
+    border: 1px solid #ced4da;
+}
+
+.contact-form .btn-primary {
+    background-color: #25d366;
+    border-color: #25d366;
+    font-weight: 600;
+}
+
+.contact-form .btn-primary:hover {
+    background-color: #128c7e;
+    border-color: #128c7e;
+}
+
+.contact-info .fas {
+    font-size: 1.2rem;
+}
+
+/* --- WhatsApp Float Button --- */
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.4);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+    color: white;
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+    .hero-section {
+        text-align: center;
+        min-height: auto;
+        padding: 120px 0 80px 0;
+    }
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    .btn-group {
+        justify-content: center;
+    }
+    .whatsapp-float {
+        width: 50px;
+        height: 50px;
+        bottom: 20px;
+        right: 20px;
+        font-size: 24px;
+    }
+    .contact-form {
+        padding: 25px;
+    }
+}
+
+
+/* ========================================
+   ESTILOS PARA LA NUEVA SECCIÓN DE SERVICIOS ESPECIALIZADOS
+   ======================================== */
+.specialized-services-section {
+    background: linear-gradient(135deg, #0a2c3c 0%, #1a1a2e 100%);
+    color: #f0f0f0;
+}
+
+.specialized-services-section .main-title {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #00d4ff, #0088cc);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+    text-shadow: 0 5px 15px rgba(0, 212, 255, 0.3);
+    animation: titleGlow 3s infinite alternate;
+}
+
+.specialized-services-section .subtitle {
+    font-size: 1.4rem;
+    color: #aad3ff;
+    max-width: 800px;
+    margin: 0 auto;
+    opacity: 0.9;
+}
+
+.specialized-services-section .section-container {
+    display: grid;
+    gap: 30px;
+}
+
+.specialized-services-section .section-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    padding: 0;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+}
+
+.specialized-services-section .section-card:hover {
+    transform: translateY(-10px);
+    border-color: rgba(0, 212, 255, 0.3);
+    box-shadow: 0 15px 35px rgba(0, 100, 200, 0.2);
+}
+
+.specialized-services-section .section-card.active {
+    background: rgba(0, 100, 200, 0.1);
+    border-color: #00d4ff;
+}
+
+.specialized-services-section .section-header {
+    padding: 25px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.specialized-services-section .section-title {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    color: #00d4ff;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-shadow: 0 2px 10px rgba(0, 212, 255, 0.3);
+}
+
+.specialized-services-section .section-icon {
+    font-size: 1.8rem;
+    color: #00d4ff;
+    transition: transform 0.3s ease;
+}
+
+.specialized-services-section .section-card.active .section-icon {
+    transform: rotate(180deg);
+}
+
+.specialized-services-section .section-content {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 30px;
+    transition: all 0.5s ease-in-out;
+    opacity: 0;
+}
+
+.specialized-services-section .section-card.active .section-content {
+    max-height: 1000px;
+    padding: 30px;
+    opacity: 1;
+}
+
+.specialized-services-section .content-text {
+    font-size: 1.1rem;
+    color: #d0e4ff;
+    text-align: justify;
+    margin-bottom: 20px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 10px;
+    border-left: 4px solid #00d4ff;
+}
+
+.specialized-services-section .highlight {
+    color: #00d4ff;
+    font-weight: 600;
+    text-shadow: 0 0 5px rgba(0, 212, 255, 0.5);
+}
+
+.specialized-services-section .keyword-tag {
+    display: inline-block;
+    background: rgba(0, 212, 255, 0.15);
+    color: #aad3ff;
+    padding: 5px 15px;
+    border-radius: 20px;
+    margin: 5px;
+    font-size: 0.9rem;
+    border: 1px solid rgba(0, 212, 255, 0.3);
+    transition: all 0.3s ease;
+}
+
+.specialized-services-section .keyword-tag:hover {
+    background: rgba(0, 212, 255, 0.25);
+    transform: scale(1.05);
+}
+
+.specialized-services-section .tags-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    justify-content: center;
+}
+
+@keyframes titleGlow {
+    0% {
+        text-shadow: 0 5px 15px rgba(0, 212, 255, 0.3);
+    }
+    100% {
+        text-shadow: 0 5px 25px rgba(0, 212, 255, 0.6), 0 0 30px rgba(0, 212, 255, 0.4);
+    }
+}
+
+@media (max-width: 768px) {
+    .specialized-services-section .main-title {
+        font-size: 2.2rem;
+    }
+    
+    .specialized-services-section .subtitle {
+        font-size: 1.1rem;
+        padding: 0 15px;
+    }
+    
+    .specialized-services-section .section-title {
+        font-size: 1.4rem;
+    }
+    
+    .specialized-services-section .section-header {
+        padding: 20px;
+    }
+    
+    .specialized-services-section .content-text {
+        padding: 15px;
+        font-size: 1rem;
+    }
+}
+
+
+/* ========================================
+   ESTILOS PARA LA NUEVA SECCIÓN DE GALERÍA
+   ======================================== */
+.gallery-section {
+    background-color: #f8f9fa; /* Mismo color que la sección de reseñas para consistencia */
+}
+
+.gallery-item {
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.gallery-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover; /* Hace que las imágenes recorten bien sin deformarse */
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
+
+.gallery-item-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--dark-color);
+    padding: 15px 15px 5px 15px;
+    margin: 0;
+}
+
+.gallery-item-desc {
+    font-size: 0.9rem;
+    color: var(--secondary-color);
+    padding: 0 15px 15px 15px;
+    margin: 0;
+    flex-grow: 1; /* Hace que la descricción ocupe el espacio restante */
+}

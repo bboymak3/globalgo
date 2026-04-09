@@ -1,14 +1,17 @@
 /* Global Pro Automotriz - Blog CSS */
 :root {
-  --primary: #E63946;
-  --dark: #1a1a2e;
-  --mid: #16213e;
+  --primary: #a80000;
+  --primary-dark: #8b0000;
+  --dark: #121212;
+  --mid: #1a1a2e;
   --accent: #0f3460;
   --light: #f8f9fa;
   --text: #333;
   --muted: #777;
   --border: #e0e0e0;
   --font: 'Segoe UI', Arial, sans-serif;
+  --whatsapp: #25D366;
+  --yellow: #FFD700;
 }
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body { font-family: var(--font); color: var(--text); background: #fff; line-height: 1.7; }
@@ -46,7 +49,7 @@ article.post-body li { margin-bottom: 8px; }
 .article-tags span:hover { background: var(--primary); color: #fff; border-color: var(--primary); cursor: pointer; }
 
 /* CTA BOX */
-.cta-box { background: linear-gradient(135deg, var(--primary), #c1121f); color: #fff; padding: 28px; border-radius: 12px; margin: 40px 0; text-align: center; }
+.cta-box { background: linear-gradient(135deg, var(--primary), var(--primary-dark)); color: #fff; padding: 28px; border-radius: 12px; margin: 40px 0; text-align: center; }
 .cta-box h3 { font-size: 1.2rem; margin-bottom: 10px; }
 .cta-box p { font-size: .9rem; opacity: .9; margin-bottom: 18px; }
 .cta-btn { background: #fff; color: var(--primary); padding: 10px 28px; border-radius: 6px; font-weight: 700; text-decoration: none; font-size: .95rem; display: inline-block; transition: transform .2s; }
@@ -93,3 +96,51 @@ footer ul li { margin-bottom: 8px; font-size: .88rem; }
 .card-desc { font-size: .88rem; color: var(--muted); line-height: 1.55; margin-bottom: 16px; }
 .card-link { font-size: .85rem; font-weight: 600; color: var(--primary); text-decoration: none; }
 .card-link:hover { text-decoration: underline; }
+
+/* STICKY BOTTOM BAR - Blog */
+.sticky-bottom-bar {
+  position: fixed; bottom: 0; left: 0; right: 0;
+  background: var(--dark);
+  border-top: 3px solid var(--primary);
+  z-index: 9999;
+  height: 70px;
+  display: flex; align-items: center; justify-content: center;
+}
+.big-buttons-container {
+  display: flex; align-items: center; justify-content: center;
+  width: 100%; max-width: 600px; gap: 8px; height: 100%;
+}
+.btn-massive-call {
+  flex: 1; height: 50px; display: flex; align-items: center; justify-content: center;
+  background: var(--primary); color: #fff; font-weight: 800; font-size: 1rem;
+  border-radius: 12px; text-decoration: none; transition: transform .2s;
+}
+.btn-massive-call:hover { transform: scale(1.03); color: #fff; }
+.btn-small-chat {
+  width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center;
+  background: var(--yellow); color: #121212; font-size: 1.2rem;
+  text-decoration: none; transition: transform .2s; flex-shrink: 0;
+}
+.btn-small-chat:hover { transform: scale(1.1); }
+.btn-massive-wa {
+  flex: 1; height: 50px; display: flex; align-items: center; justify-content: center;
+  background: var(--whatsapp); color: #fff; font-weight: 800; font-size: 1rem;
+  border-radius: 12px; text-decoration: none; transition: transform .2s;
+}
+.btn-massive-wa:hover { transform: scale(1.03); color: #fff; }
+@media(min-width:992px){
+  .sticky-bottom-bar { height: 80px; }
+  .btn-massive-call, .btn-massive-wa { height: 56px; font-size: 1.1rem; }
+  .btn-small-chat { width: 56px; height: 56px; }
+}
+body { padding-bottom: 80px; }
+
+/* WHATSAPP FLOAT */
+.whatsapp-float {
+  position: fixed; bottom: 100px; right: 20px; z-index: 9998;
+  width: 60px; height: 60px; background: var(--whatsapp); color: #fff;
+  border-radius: 50%; display: flex; align-items: center; justify-content: center;
+  font-size: 1.8rem; box-shadow: 0 4px 15px rgba(37,211,102,.4);
+  text-decoration: none; transition: transform .2s;
+}
+.whatsapp-float:hover { transform: scale(1.1); color: #fff; }

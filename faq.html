@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+<div id="floating-counter">
+  <i class="fas fa-users"></i> 
+  <span id="live-count">0</span>
+  <div class="label-visitor">Visitantes</div>
+</div>
+
+<style>
+  #floating-counter {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: linear-gradient(135deg, #FFC107 0%, #ff9800 100%);
+    color: #000;
+    padding: 10px 18px;
+    border-radius: 50px;
+    font-weight: 800;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    z-index: 10001;
+    border: 2px solid #fff;
+    cursor: default;
+    animation: pulse-yellow 2s infinite;
+    transition: transform 0.3s ease;
+  }
+
+  #floating-counter:hover {
+    transform: scale(1.1);
+  }
+
+  .label-visitor {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    display: block;
+    line-height: 1;
+    color: #333;
+  }
+
+  @keyframes pulse-yellow {
+    0% { box-shadow: 0 0 0 0 rgba(255, 193, 7, 0.7); }
+    70% { box-shadow: 0 0 0 10px rgba(255, 193, 7, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(255, 193, 7, 0); }
+  }
+
+  @media (max-width: 768px) {
+    #floating-counter {
+      top: 80px;
+      right: 10px;
+      padding: 8px 14px;
+      font-size: 0.9rem;
+    }
+  }
+</style>
+
+<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "41608a73d5524531804ac808fbf45439"}'></script><!-- End Cloudflare Web Analytics -->
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NK35S8FG');</script>
+<!-- End Google Tag Manager -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  
+  <link rel="icon" type="image/png" href="images/mecanico-a-domicilio-en-santiago.png"/>
+  <link rel="apple-touch-icon" href="images/mecanico-a-domicilio-en-santiago.png"/>
+
+  <title>Preguntas Frecuentes - GlobalPro Automotriz | Taller Mecánico en Santiago</title>
+  <meta name="description" content="Preguntas frecuentes sobre GlobalPro Automotriz. Resuelve todas tus dudas sobre nuestro servicio de mecánico a domicilio y taller mecánico en Santiago, Chile."/>
+  <link rel="canonical" href="https://globalpro.pages.dev/faq.html"/>
+  
+  <meta property="og:title" content="Preguntas Frecuentes - GlobalPro Automotriz | Taller Mecánico en Santiago"/>
+  <meta property="og:description" content="Preguntas frecuentes sobre GlobalPro Automotriz. Resuelve todas tus dudas sobre nuestro servicio de mecánico a domicilio y taller mecánico en Santiago, Chile."/>
+  <meta property="og:image" content="https://globalpro.pages.dev/images/mecanico-a-domicilio-en-santiago.png"/>
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+  <meta property="og:url" content="https://globalpro.pages.dev/faq.html"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:locale" content="es_CL"/>
+  <meta property="og:site_name" content="GlobalPro Automotriz"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="Preguntas Frecuentes - GlobalPro Automotriz | Taller Mecánico en Santiago"/>
+  <meta name="twitter:description" content="Preguntas frecuentes sobre GlobalPro Automotriz. Resuelve todas tus dudas sobre nuestro servicio de mecánico a domicilio y taller mecánico en Santiago, Chile."/>
+  <meta name="twitter:image" content="https://globalpro.pages.dev/images/mecanico-a-domicilio-en-santiago.png"/>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link rel="stylesheet" href="css/styles.css"/>
+  <script src="https://elfsightcdn.com/platform.js" async></script>
+
+  <style>
+    :root {
+      --gp-blood-red: #a80000; 
+      --gp-black: #121212;
+    }
+
+    html { 
+      scroll-behavior: smooth; 
+      scroll-padding-bottom: 120px;
+    }
+    
+    .text-primary { color: var(--gp-blood-red) !important; }
+    
+    .btn-primary {
+      background-color: var(--gp-blood-red) !important;
+      border-color: var(--gp-blood-red) !important;
+      color: white !important;
+    }
+    .btn-primary:hover, .btn-primary:focus {
+      background-color: #800000 !important;
+      border-color: #800000 !important;
+      box-shadow: 0 0 15px rgba(168, 0, 0, 0.4);
+    }
+    
+    .bg-primary { background-color: var(--gp-blood-red) !important; }
+    .border-primary { border-color: var(--gp-blood-red) !important; }
+
+    .nav-link { color: #ccc !important; transition: 0.3s; }
+    .nav-link:hover, .nav-link.active { color: var(--gp-blood-red) !important; }
+
+    .logo-img {
+      background-color: var(--gp-blood-red); 
+      width: 50px; height: 50px; display: flex; align-items: center; justify-content: center;
+      border-radius: 8px; margin-right: 15px; overflow: hidden; 
+      color: white; font-weight: bold; font-size: 1.2rem;
+    }
+    .logo-img img {
+      width: 100%; height: 100%; object-fit: contain; padding: 5px;
+    }
+
+    body, .navbar, .container, .container-fluid {
+      overflow-x: hidden !important;
+      max-width: 100%;
+    }
+    .nav-container {
+      padding: 0 15px;
+    }
+
+    .accordion-button:not(.collapsed) {
+      background-color: var(--gp-blood-red);
+      color: white;
+    }
+    .accordion-button:focus {
+      box-shadow: 0 0 0 0.25rem rgba(168, 0, 0, 0.25);
+    }
+    .accordion-button:not(.collapsed)::after {
+      filter: brightness(0) invert(1);
+    }
+
+    /* Hero FAQ */
+    .faq-hero {
+      background: linear-gradient(135deg, rgba(18,18,18,0.95) 0%, rgba(168,0,0,0.85) 100%);
+      padding-top: 120px;
+      padding-bottom: 60px;
+      color: white;
+      text-align: center;
+    }
+    .faq-hero h1 {
+      font-size: 2.8rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+    }
+    .faq-hero p {
+      font-size: 1.2rem;
+      opacity: 0.9;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    /* CTA Section */
+    .cta-section {
+      background: linear-gradient(135deg, var(--gp-black) 0%, #1a1a1a 100%);
+      padding: 60px 0;
+      text-align: center;
+      border-top: 4px solid var(--gp-blood-red);
+    }
+    .cta-section h2 {
+      color: white;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+    .cta-section p {
+      color: #bbb;
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+    }
+
+    .sticky-bottom-bar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 90px;
+      background-color: var(--gp-black);
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0 15px;
+      z-index: 9999;
+      box-shadow: 0 -4px 15px rgba(0,0,0,0.6);
+      border-top: 3px solid var(--gp-blood-red);
+    }
+
+    .big-buttons-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      max-width: 100%; 
+      gap: 10px;
+      height: 100%;
+    }
+
+    .btn-massive-call {
+      flex: 1;
+      height: 70px;
+      background-color: #D32F2F;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-size: 1.5rem;
+      font-weight: 800;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+      text-transform: uppercase;
+      transition: transform 0.2s, background-color 0.2s;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+      animation: pulse-red 2s infinite;
+    }
+
+    @keyframes pulse-red {
+      0% { box-shadow: 0 0 0 0 rgba(211, 47, 47, 0.7); }
+      70% { box-shadow: 0 0 0 10px rgba(211, 47, 47, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(211, 47, 47, 0); }
+    }
+
+    .btn-massive-call:hover {
+      transform: scale(1.02);
+      background-color: #b71c1c;
+      color: white;
+    }
+
+    .btn-massive-wa {
+      flex: 1;
+      height: 70px;
+      background-color: #25D366;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-size: 1.2rem;
+      font-weight: 700;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      transition: transform 0.2s, background-color 0.2s;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    }
+
+    .btn-massive-wa:hover {
+      transform: scale(1.02);
+      background-color: #1ebc57;
+      color: white;
+    }
+
+    .btn-small-chat {
+      width: 50px;
+      height: 50px;
+      background-color: #FFC107;
+      color: black;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      text-decoration: none;
+      flex-shrink: 0;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+      border: 2px solid white;
+      z-index: 10;
+    }
+    .btn-small-chat:hover {
+      background-color: #ffca2c;
+      transform: scale(1.1);
+    }
+
+    @media (min-width: 992px) {
+      .sticky-bottom-bar {
+        height: 100px;
+        padding: 0 50px;
+      }
+      .big-buttons-container {
+        max-width: 1200px;
+      }
+      .btn-massive-call, .btn-massive-wa {
+        font-size: 1.8rem;
+        height: 80px;
+      }
+    }
+
+    .main-footer {
+      background-color: #000;
+      color: #bbb;
+      padding: 60px 0 20px 0;
+      font-size: 0.9rem;
+      border-top: 4px solid var(--gp-blood-red);
+    }
+    
+    .footer-logo-box {
+      background-color: var(--gp-blood-red);
+      width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+    .footer-logo-box i {
+      font-size: 1.8rem;
+      color: white;
+    }
+
+    .footer-title {
+      color: white;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+      font-size: 1.1rem;
+      border-bottom: 2px solid var(--gp-blood-red);
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    .footer-links ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    
+    .footer-links li {
+      margin-bottom: 10px;
+    }
+    
+    .footer-links a {
+      color: #bbb;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    
+    .footer-links a:hover {
+      color: var(--gp-blood-red);
+      padding-left: 5px;
+    }
+
+    .contact-info-item {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 15px;
+    }
+    
+    .contact-info-item i {
+      color: var(--gp-blood-red);
+      margin-right: 10px;
+      margin-top: 5px;
+    }
+
+    .social-icons a {
+      display: inline-flex;
+      width: 35px;
+      height: 35px;
+      background-color: #333;
+      color: white;
+      border-radius: 50%;
+      align-items: center;
+      justify-content: center;
+      margin-right: 10px;
+      transition: 0.3s;
+      text-decoration: none;
+    }
+    
+    .social-icons a:hover {
+      background-color: var(--gp-blood-red);
+      transform: translateY(-3px);
+    }
+
+    .copyright-bar {
+      background-color: #0a0a0a;
+      padding: 15px 0;
+      margin-top: 40px;
+      border-top: 1px solid #333;
+      text-align: center;
+      font-size: 0.85rem;
+    }
+
+    /* FAQ Accordion Enhancement */
+    .faq-section .accordion-item {
+      border: 1px solid rgba(168, 0, 0, 0.15);
+      margin-bottom: 10px;
+      border-radius: 10px !important;
+      overflow: hidden;
+    }
+    .faq-section .accordion-button {
+      font-weight: 600;
+      font-size: 1.05rem;
+      padding: 1.1rem 1.5rem;
+    }
+    .faq-section .accordion-body {
+      color: #555;
+      font-size: 1rem;
+      line-height: 1.8;
+      padding: 1.2rem 1.5rem;
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "¿Qué es GlobalPro Automotriz?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Somos un taller mecánico especializado en servicio automotriz integral y mecánico a domicilio en Santiago. Contamos con técnicos profesionales especializados en motor, frenos, electricidad y más."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Cómo funciona el servicio?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Escoge el servicio que necesitas y contáctanos por nuestra página web o por WhatsApp con nuestros asesores. Una vez agendado, el técnico irá a donde le indiques para realizar el servicio."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Qué servicios ofrecen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nuestros técnicos están calificados para todo tipo de trabajos automotrices: escáner y diagnóstico computarizado, revisión pre-compra, cambio de aceite de motor, reparación de frenos, suspensión y dirección, sistema eléctrico, aire acondicionado, cambios de embrague y reparaciones complejas."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Los servicios cuentan con garantía?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sí. En GlobalPro Automotriz ofrecemos garantía en todos nuestros servicios. Los periodos de garantía varían entre 3, 6 y 12 meses dependiendo del tipo de servicio realizado."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Qué métodos de pago aceptan?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Puedes cancelar con efectivo, transferencia electrónica, o tarjetas de crédito, débito y prepago a través de nuestros sistemas de pago."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Puedo reagendar el servicio?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sí, puedes reagendar el servicio comunicándote con nuestros asesores vía WhatsApp o llamando al +56 9 3902 6185 con antelación para reprogramar tu cita."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Cuál es la política de cancelación del servicio?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Si necesitas cancelar o reagendar, te pedimos hacerlo con al menos 3 horas de anticipación para no afectar la programación de nuestros técnicos."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Cuánto se demora el reembolso en caso de cancelación?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Los reembolsos se procesan en menos de 48 horas en días hábiles, dependiendo del método de pago utilizado."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Entregan información de todo lo que hace el técnico en la reparación?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sí. Cada técnico está capacitado para entregar seriedad, transparencia y estructura a cada información que se recupere del vehículo mediante el escáner de diagnóstico. Además, entregamos un informe detallado de todas las intervenciones realizadas."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Los servicios incluyen repuestos?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Cada servicio tiene un costo base de mano de obra sin repuesto añadido, así evitamos la especulación de precios por cada pieza. Te recomendaremos siempre las mejores casas de repuesto para tu auto."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "41608a73d5524531804ac808fbf45439"}'></script><!-- End Cloudflare Web Analytics -->
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NK35S8FG"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <div class="container nav-container">
+    <a href="index.html" class="logo d-flex align-items-center text-decoration-none text-white">
+      <!-- LOGO: CAJA ROJO SANGRE -->
+      <div class="logo-img">
+        <!-- Fallback texto si no carga imagen -->
+        <i class="fas fa-wrench"></i>
+      </div>
+      <div>
+        <div class="logo-text">GLOBALPRO</div>
+        <div class="logo-subtext">Taller Mecánico</div>
+      </div>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse desktop-menu" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html#mecanico-domicilio-seo">Mecánico a Domicilio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html#servicios">Servicios</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="comunasDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Comunas
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="comunasDropdown" style="max-height: 400px; overflow-y: auto;">
+            <li><a class="dropdown-item" href="contacto.html">Alhué</a></li><li><a class="dropdown-item" href="contacto.html">Buin</a></li><li><a class="dropdown-item" href="contacto.html">Calera de Tango</a></li><li><a class="dropdown-item" href="contacto.html">Cerrillos</a></li><li><a class="dropdown-item" href="contacto.html">Cerro Navia</a></li><li><a class="dropdown-item" href="contacto.html">Colina</a></li><li><a class="dropdown-item" href="contacto.html">Conchalí</a></li><li><a class="dropdown-item" href="contacto.html">Curacaví</a></li><li><a class="dropdown-item" href="contacto.html">El Bosque</a></li><li><a class="dropdown-item" href="contacto.html">El Monte</a></li><li><a class="dropdown-item" href="contacto.html">Estación Central</a></li><li><a class="dropdown-item" href="contacto.html">Huechuraba</a></li><li><a class="dropdown-item" href="contacto.html">Independencia</a></li><li><a class="dropdown-item" href="contacto.html">Isla de Maipo</a></li><li><a class="dropdown-item" href="contacto.html">La Cisterna</a></li><li><a class="dropdown-item" href="contacto.html">La Florida</a></li><li><a class="dropdown-item" href="contacto.html">La Granja</a></li><li><a class="dropdown-item" href="contacto.html">La Pintana</a></li><li><a class="dropdown-item" href="contacto.html">La Reina</a></li><li><a class="dropdown-item" href="contacto.html">Las Condes</a></li><li><a class="dropdown-item" href="contacto.html">Lampa</a></li><li><a class="dropdown-item" href="contacto.html">Lo Barnechea</a></li><li><a class="dropdown-item" href="contacto.html">Lo Espejo</a></li><li><a class="dropdown-item" href="contacto.html">Lo Prado</a></li><li><a class="dropdown-item" href="contacto.html">Macul</a></li><li><a class="dropdown-item" href="contacto.html">Maipú</a></li><li><a class="dropdown-item" href="contacto.html">María Pinto</a></li><li><a class="dropdown-item" href="contacto.html">Melipilla</a></li><li><a class="dropdown-item" href="contacto.html">Ñuñoa</a></li><li><a class="dropdown-item" href="contacto.html">Padre Hurtado</a></li><li><a class="dropdown-item" href="contacto.html">Paine</a></li><li><a class="dropdown-item" href="contacto.html">Pedro Aguirre Cerda</a></li><li><a class="dropdown-item" href="contacto.html">Peñaflor</a></li><li><a class="dropdown-item" href="contacto.html">Peñalolén</a></li><li><a class="dropdown-item" href="contacto.html">Pirque</a></li><li><a class="dropdown-item" href="contacto.html">Providencia</a></li><li><a class="dropdown-item" href="contacto.html">Pudahuel</a></li><li><a class="dropdown-item" href="contacto.html">Puente Alto</a></li><li><a class="dropdown-item" href="contacto.html">Quilicura</a></li><li><a class="dropdown-item" href="contacto.html">Quinta Normal</a></li><li><a class="dropdown-item" href="contacto.html">Recoleta</a></li><li><a class="dropdown-item" href="contacto.html">Renca</a></li><li><a class="dropdown-item" href="contacto.html">San Bernardo</a></li><li><a class="dropdown-item" href="contacto.html">San Joaquín</a></li><li><a class="dropdown-item" href="contacto.html">San José de Maipo</a></li><li><a class="dropdown-item" href="contacto.html">San Miguel</a></li><li><a class="dropdown-item" href="contacto.html">San Pedro</a></li><li><a class="dropdown-item" href="contacto.html">San Ramón</a></li><li><a class="dropdown-item" href="contacto.html">Santiago</a></li><li><a class="dropdown-item" href="contacto.html">Talagante</a></li><li><a class="dropdown-item" href="contacto.html">Tiltil</a></li><li><a class="dropdown-item" href="contacto.html">Vitacura</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="quienes-somos.html">Quiénes Somos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contacto.html">Contacto</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="blog/index.html">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="faq.html">FAQ</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="politica-privacidad.html">Privacidad</a>
+        </li>
+        <li class="nav-item">
+          <a href="https://wa.me/56939026185" class="whatsapp-btn" target="_blank">
+            <i class="fab fa-whatsapp me-2"></i> WhatsApp
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO SECTION -->
+<section class="faq-hero">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <i class="fas fa-question-circle fa-3x mb-4" style="color: #FFC107;"></i>
+        <h1>Preguntas Frecuentes</h1>
+        <p>Resolvemos todas tus dudas sobre los servicios de <strong>GlobalPro Automotriz</strong>. Si no encuentras lo que buscas, contáctanos directamente por WhatsApp.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ SECTION -->
+<section class="py-5 bg-light faq-section" id="faq">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+
+        <div class="accordion" id="accordionFAQ">
+
+          <!-- Pregunta 1 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <i class="fas fa-building me-2 text-primary"></i> ¿Qué es GlobalPro Automotriz?
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionFAQ">
+              <div class="accordion-body">
+                Somos un taller mecánico especializado en servicio automotriz integral y mecánico a domicilio en Santiago. Contamos con técnicos profesionales especializados en motor, frenos, electricidad y más. Nos encargamos de cubrir todas las necesidades de tu vehículo, tanto en nuestro taller físico en Pedro Aguirre Cerda como a domicilio en toda la Región Metropolitana.
+              </div>
+            </div>
+          </div>
+
+          <!-- Pregunta 2 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                <i class="fas fa-cogs me-2 text-primary"></i> ¿Cómo funciona el servicio?
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionFAQ">
+              <div class="accordion-body">
+                Escoge el servicio que necesitas y contáctanos por nuestra página web o por WhatsApp con nuestros asesores. Una vez agendado, el técnico irá a donde le indiques para realizar el servicio. Si prefieres traer tu vehículo, puedes visitar nuestro taller en Av. Padre Alberto Hurtado 3598, Pedro Aguirre Cerda.
+              </div>
+            </div>
+          </div>
+
+          <!-- Pregunta 3 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                <i class="fas fa-tools me-2 text-primary"></i> ¿Qué servicios ofrecen?
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionFAQ">
+              <div class="accordion-body">
+                Nuestros técnicos están calificados para todo tipo de trabajos automotrices: escáner y diagnóstico computarizado, revisión pre-compra, cambio de aceite de motor, reparación de frenos, suspensión y dirección, sistema eléctrico, aire acondicionado, cambios de embrague y reparaciones complejas. Trabajamos tanto a domicilio como en nuestro taller.
+              </div>
+            </div>
+          </div>
+
+          <!-- Pregunta 4 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFour">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                <i class="fas fa-shield-alt me-2 text-primary"></i> ¿Los servicios cuentan con garantía?
+              </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionFAQ">
+              <div class="accordion-body">
+                Sí. En GlobalPro Automotriz ofrecemos garantía en todos nuestros servicios. Los periodos de garantía varían entre 3, 6 y 12 meses dependiendo del tipo de servicio realizado y desde la fecha en que se efectúa el mismo.
+              </div>
+            </div>
+          </div>
+
+          <!-- Pregunta 5 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFive">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                <i class="fas fa-file-alt me-2 text-primary"></i> ¿Entregan información de todo lo que hace el técnico en la reparación?
+              </button>
+            </h2>
+            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionFAQ">
+              <div class="accordion-body">
+                Sí. Cada técnico está capacitado para entregar seriedad, transparencia y estructura a cada información que se recupere del vehículo mediante el escáner de diagnóstico, para que usted la pueda entender completamente. Además, entregamos un informe detallado de todas las intervenciones realizadas.
+              </div>
+            </div>
+          </div>
+
+          <!-- Pregunta 6 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingSix">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                <i class="fas fa-box-open me-2 text-primary"></i> ¿Los servicios incluyen repuestos?
+              </button>
+            </h2>
+            <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionFAQ">
+              <div class="accordion-body">
+                Cada servicio tiene un costo base de mano de obra sin repuesto añadido, así evitamos la especulación de precios por cada pieza. Te recomendaremos siempre las mejores casas de repuesto para tu auto para que no te engañen, así también podremos darte una excelente garantía.
+              </div>
+            </div>
+          </div>
+
+          <!-- Pregunta 7 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingSeven">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                <i class="fas fa-credit-card me-2 text-primary"></i> ¿Qué métodos de pago aceptan?
+              </button>
+            </h2>
+            <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionFAQ">
+              <div class="accordion-body">
+                Puedes cancelar con efectivo, transferencia electrónica, o tarjetas de crédito, débito y prepago a través de nuestros sistemas de pago. Consulta con nuestros asesores las opciones disponibles al momento de agendar.
+              </div>
+            </div>
+          </div>
+
+          <!-- Pregunta 8 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingEight">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                <i class="fas fa-calendar-alt me-2 text-primary"></i> ¿Puedo reagendar el servicio?
+              </button>
+            </h2>
+            <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionFAQ">
+              <div class="accordion-body">
+                Sí, puedes reagendar el servicio comunicándote con nuestros asesores vía WhatsApp o llamando al <a href="tel:+56939026185" style="color: var(--gp-blood-red); font-weight: bold;">+56 9 3902 6185</a> con antelación para reprogramar tu cita.
+              </div>
+            </div>
+          </div>
+
+          <!-- Pregunta 9 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingNine">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                <i class="fas fa-times-circle me-2 text-primary"></i> ¿Cuál es la política de cancelación del servicio?
+              </button>
+            </h2>
+            <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine" data-bs-parent="#accordionFAQ">
+              <div class="accordion-body">
+                Si necesitas cancelar o reagendar, te pedimos hacerlo con al menos 3 horas de anticipación para no afectar la programación de nuestros técnicos. En caso de cancelaciones tardías, se podrá retener un monto por gastos logísticos. Consulta nuestros términos y condiciones para más detalle.
+              </div>
+            </div>
+          </div>
+
+          <!-- Pregunta 10 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTen">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                <i class="fas fa-money-bill-wave me-2 text-primary"></i> ¿Cuánto se demora el reembolso en caso de cancelación?
+              </button>
+            </h2>
+            <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen" data-bs-parent="#accordionFAQ">
+              <div class="accordion-body">
+                Los reembolsos se procesan en menos de 48 horas en días hábiles, dependiendo del método de pago utilizado. Para más información, comunícate directamente con nuestros asesores.
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA SECTION -->
+<section class="cta-section">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8 text-center">
+        <i class="fab fa-whatsapp fa-3x mb-3" style="color: #25D366;"></i>
+        <h2>¿Tienes más preguntas?</h2>
+        <p>Nuestro equipo de asesores está listo para ayudarte. Escríbenos por WhatsApp y resuelve todas tus dudas sobre nuestros servicios automotrices en Santiago.</p>
+        <a href="https://wa.me/56939026185?text=Hola%20tengo%20una%20consulta%20sobre%20los%20servicios%20de%20GlobalPro" class="btn btn-primary btn-lg me-3 mb-2" target="_blank">
+          <i class="fab fa-whatsapp me-2"></i> Escribir por WhatsApp
+        </a>
+        <a href="tel:+56939026185" class="btn btn-outline-light btn-lg mb-2">
+          <i class="fas fa-phone-alt me-2"></i> Llamar Ahora
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="main-footer">
+  <div class="container">
+    <div class="row">
+      <!-- COLUMNA 1: SOBRE NOSOTROS -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="footer-logo-box">
+          <i class="fas fa-wrench"></i>
+        </div>
+        <h5 class="footer-title">GlobalPro</h5>
+        <p class="text-justify">
+          Somos líderes en <strong>Mecánico a Domicilio</strong> en Santiago. Ofrecemos servicio automotriz integral con tecnología de punta y profesionales certificados. Tu vehículo en las mejores manos, donde tú estés.
+        </p>
+        <div class="social-icons mt-3">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="https://wa.me/56939026185"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <!-- COLUMNA 2: ENLACES RÁPIDOS -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <h5 class="footer-title">Enlaces Rápidos</h5>
+        <div class="footer-links">
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="index.html#mecanico-domicilio-seo">Mecánico a Domicilio</a></li>
+            <li><a href="index.html#servicios">Nuestros Servicios</a></li>
+            <li><a href="quienes-somos.html">Quiénes Somos</a></li>
+            <li><a href="faq.html">Preguntas Frecuentes</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- COLUMNA 3: CONTACTO -->
+      <div class="col-lg-4 col-md-12 mb-4">
+        <h5 class="footer-title">Información de Contacto</h5>
+        
+        <div class="contact-info-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <div>
+            <strong>Ubicación:</strong><br>
+            Servicio a Domicilio en todo Santiago<br>
+            Base: Pedro Aguirre Cerda, RM
+          </div>
+        </div>
+
+        <div class="contact-info-item">
+          <i class="fas fa-phone-alt"></i>
+          <div>
+            <strong>Teléfono:</strong><br>
+            <a href="tel:939026185" style="color:#bbb; text-decoration:none;">+569 39026185</a>
+          </div>
+        </div>
+
+        <div class="contact-info-item">
+          <i class="fas fa-envelope"></i>
+          <div>
+            <strong>Email:</strong><br>
+            <a href="mailto:contacto@globalpro.cl" style="color:#bbb; text-decoration:none;">contacto@globalpro.cl</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- BARRA DE COPYRIGHT -->
+  <div class="copyright-bar">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 text-center text-md-start">
+          &copy; 2024 GlobalPro. Todos los derechos reservados.
+        </div>
+        <div class="col-md-6 text-center text-md-end">
+          Especialistas en <strong>Mecánico a Domicilio</strong> | Servicio Automotriz Integral
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- STICKY BOTTOM BAR -->
+<div class="sticky-bottom-bar">
+  <div class="big-buttons-container">
+    
+    <!-- Botón Llamada (Rojo Grande) -->
+    <a href="tel:939026185" class="btn-massive-call">
+      <i class="fas fa-phone-alt"></i> LLAMAR
+    </a>
+
+    <!-- Botón Chat IA (Centro Pequeño) -->
+    <a href="index.html" class="btn-small-chat" title="Inicio">
+      <i class="fas fa-home"></i>
+    </a>
+
+    <!-- Botón WhatsApp (Verde Grande) -->
+    <a href="https://wa.me/56939026185?text=Hola%20te%20escribo%20desde%20la%20pagina%20web%20estoy%20interesado%20en%20tus%20servicios" class="btn-massive-wa" target="_blank">
+      <i class="fab fa-whatsapp"></i> WhatsApp
+    </a>
+
+  </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Custom JS -->
+<script src="js/script.js"></script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const counterElement = document.getElementById('live-count');
+    
+    let baseVisitas = 123; 
+    
+    let visitasGuardadas = localStorage.getItem('global_total_visits');
+    
+    if (!visitasGuardadas) {
+      visitasGuardadas = baseVisitas;
+    } else {
+      visitasGuardadas = parseInt(visitasGuardadas);
+    }
+
+    if (!sessionStorage.getItem('session_active')) {
+      visitasGuardadas += 1;
+      localStorage.setItem('global_total_visits', visitasGuardadas);
+      sessionStorage.setItem('session_active', 'true');
+    }
+
+    counterElement.innerText = visitasGuardadas.toLocaleString('es-CL');
+  });
+</script>
+
+</body>
+</html>

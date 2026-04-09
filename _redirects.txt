@@ -1,0 +1,3 @@
+/* /index.html 200
+/sitemap.xml https://raw.githubusercontent.com/bboymak3/globalpro/main/sitemap.xml 200
+/robots.txt https://raw.githubusercontent.com/bboymak3/globalpro/main/robots.txt 200

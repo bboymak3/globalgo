@@ -1,0 +1,1122 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+<div id="floating-counter">
+  <i class="fas fa-users"></i> 
+  <span id="live-count">0</span>
+  <div class="label-visitor">Visitantes</div>
+</div>
+
+<style>
+  #floating-counter {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: linear-gradient(135deg, #FFC107 0%, #ff9800 100%);
+    color: #000;
+    padding: 10px 18px;
+    border-radius: 50px;
+    font-weight: 800;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    z-index: 10001;
+    border: 2px solid #fff;
+    cursor: default;
+    animation: pulse-yellow 2s infinite;
+    transition: transform 0.3s ease;
+  }
+
+  #floating-counter:hover {
+    transform: scale(1.1);
+  }
+
+  .label-visitor {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    display: block;
+    line-height: 1;
+    color: #333;
+  }
+
+  @keyframes pulse-yellow {
+    0% { box-shadow: 0 0 0 0 rgba(255, 193, 7, 0.7); }
+    70% { box-shadow: 0 0 0 10px rgba(255, 193, 7, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(255, 193, 7, 0); }
+  }
+
+  @media (max-width: 768px) {
+    #floating-counter {
+      top: 80px;
+      right: 10px;
+      padding: 8px 14px;
+      font-size: 0.9rem;
+    }
+  }
+</style>
+
+<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "41608a73d5524531804ac808fbf45439"}'></script><!-- End Cloudflare Web Analytics -->
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NK35S8FG');</script>
+<!-- End Google Tag Manager -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  
+  <link rel="icon" type="image/png" href="images/mecanico-a-domicilio-en-santiago.png"/>
+  <link rel="apple-touch-icon" href="images/mecanico-a-domicilio-en-santiago.png"/>
+
+  <title>Política de Privacidad - GlobalPro Automotriz | Taller Mecánico en Santiago</title>
+  <meta name="description" content="Política de Privacidad de GlobalPro Automotriz. Conoce cómo recopilamos, usamos y protegemos tus datos personales conforme a la Ley 19.628 de Chile.">
+  <link rel="canonical" href="https://globalpro.pages.dev/politica-privacidad.html"/>
+  
+  <meta property="og:title" content="Política de Privacidad - GlobalPro Automotriz"/>
+  <meta property="og:description" content="Política de Privacidad de GlobalPro Automotriz. Conoce cómo recopilamos, usamos y protegemos tus datos personales conforme a la Ley 19.628 de Chile."/>
+  <meta property="og:image" content="https://globalpro.pages.dev/images/mecanico-a-domicilio-en-santiago.png"/>
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+  <meta property="og:url" content="https://globalpro.pages.dev/politica-privacidad.html"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:locale" content="es_CL"/>
+  <meta property="og:site_name" content="GlobalPro Automotriz"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="Política de Privacidad - GlobalPro Automotriz"/>
+  <meta name="twitter:description" content="Política de Privacidad de GlobalPro Automotriz. Conoce cómo recopilamos, usamos y protegemos tus datos personales."/>
+  <meta name="twitter:image" content="https://globalpro.pages.dev/images/mecanico-a-domicilio-en-santiago.png"/>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link rel="stylesheet" href="css/styles.css"/>
+  <script src="https://elfsightcdn.com/platform.js" async></script>
+
+  <style>
+    :root {
+      --gp-blood-red: #a80000; 
+      --gp-black: #121212;
+    }
+
+    html { 
+      scroll-behavior: smooth; 
+      scroll-padding-bottom: 120px;
+    }
+    
+    .text-primary { color: var(--gp-blood-red) !important; }
+    
+    .btn-primary {
+      background-color: var(--gp-blood-red) !important;
+      border-color: var(--gp-blood-red) !important;
+      color: white !important;
+    }
+    .btn-primary:hover, .btn-primary:focus {
+      background-color: #800000 !important;
+      border-color: #800000 !important;
+      box-shadow: 0 0 15px rgba(168, 0, 0, 0.4);
+    }
+    
+    .bg-primary { background-color: var(--gp-blood-red) !important; }
+    .border-primary { border-color: var(--gp-blood-red) !important; }
+
+    .nav-link { color: #ccc !important; transition: 0.3s; }
+    .nav-link:hover, .nav-link.active { color: var(--gp-blood-red) !important; }
+
+    .logo-img {
+      background-color: var(--gp-blood-red); 
+      width: 50px; height: 50px; display: flex; align-items: center; justify-content: center;
+      border-radius: 8px; margin-right: 15px; overflow: hidden; 
+      color: white; font-weight: bold; font-size: 1.2rem;
+    }
+    .logo-img img {
+      width: 100%; height: 100%; object-fit: contain; padding: 5px;
+    }
+
+    body, .navbar, .container, .container-fluid {
+      overflow-x: hidden !important;
+      max-width: 100%;
+    }
+    .nav-container {
+      padding: 0 15px;
+    }
+
+    .sticky-bottom-bar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 90px;
+      background-color: var(--gp-black);
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0 15px;
+      z-index: 9999;
+      box-shadow: 0 -4px 15px rgba(0,0,0,0.6);
+      border-top: 3px solid var(--gp-blood-red);
+    }
+
+    .big-buttons-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      max-width: 100%; 
+      gap: 10px;
+      height: 100%;
+    }
+
+    .btn-massive-call {
+      flex: 1;
+      height: 70px;
+      background-color: #D32F2F;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-size: 1.5rem;
+      font-weight: 800;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+      text-transform: uppercase;
+      transition: transform 0.2s, background-color 0.2s;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+      animation: pulse-red 2s infinite;
+    }
+
+    @keyframes pulse-red {
+      0% { box-shadow: 0 0 0 0 rgba(211, 47, 47, 0.7); }
+      70% { box-shadow: 0 0 0 10px rgba(211, 47, 47, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(211, 47, 47, 0); }
+    }
+
+    .btn-massive-call:hover {
+      transform: scale(1.02);
+      background-color: #b71c1c;
+      color: white;
+    }
+
+    .btn-massive-wa {
+      flex: 1;
+      height: 70px;
+      background-color: #25D366;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-size: 1.2rem;
+      font-weight: 700;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      transition: transform 0.2s, background-color 0.2s;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    }
+
+    .btn-massive-wa:hover {
+      transform: scale(1.02);
+      background-color: #1ebc57;
+      color: white;
+    }
+
+    .btn-small-chat {
+      width: 50px;
+      height: 50px;
+      background-color: #FFC107;
+      color: black;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      text-decoration: none;
+      flex-shrink: 0;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+      border: 2px solid white;
+      z-index: 10;
+    }
+    .btn-small-chat:hover {
+      background-color: #ffca2c;
+      transform: scale(1.1);
+    }
+
+    @media (min-width: 992px) {
+      .sticky-bottom-bar {
+        height: 100px;
+        padding: 0 50px;
+      }
+      .big-buttons-container {
+        max-width: 1200px;
+      }
+      .btn-massive-call, .btn-massive-wa {
+        font-size: 1.8rem;
+        height: 80px;
+      }
+    }
+
+    .main-footer {
+      background-color: #000;
+      color: #bbb;
+      padding: 60px 0 20px 0;
+      font-size: 0.9rem;
+      border-top: 4px solid var(--gp-blood-red);
+    }
+    
+    .footer-logo-box {
+      background-color: var(--gp-blood-red);
+      width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+    .footer-logo-box i {
+      font-size: 1.8rem;
+      color: white;
+    }
+
+    .footer-title {
+      color: white;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+      font-size: 1.1rem;
+      border-bottom: 2px solid var(--gp-blood-red);
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    .footer-links ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    
+    .footer-links li {
+      margin-bottom: 10px;
+    }
+    
+    .footer-links a {
+      color: #bbb;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    
+    .footer-links a:hover {
+      color: var(--gp-blood-red);
+      padding-left: 5px;
+    }
+
+    .contact-info-item {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 15px;
+    }
+    
+    .contact-info-item i {
+      color: var(--gp-blood-red);
+      margin-right: 10px;
+      margin-top: 5px;
+    }
+
+    .social-icons a {
+      display: inline-flex;
+      width: 35px;
+      height: 35px;
+      background-color: #333;
+      color: white;
+      border-radius: 50%;
+      align-items: center;
+      justify-content: center;
+      margin-right: 10px;
+      transition: 0.3s;
+      text-decoration: none;
+    }
+    
+    .social-icons a:hover {
+      background-color: var(--gp-blood-red);
+      transform: translateY(-3px);
+    }
+
+    .copyright-bar {
+      background-color: #0a0a0a;
+      padding: 15px 0;
+      margin-top: 40px;
+      border-top: 1px solid #333;
+      text-align: center;
+      font-size: 0.85rem;
+    }
+
+    /* Privacy Policy specific styles */
+    .policy-section {
+      padding-top: 120px;
+      padding-bottom: 140px;
+    }
+
+    .policy-header {
+      background: linear-gradient(135deg, var(--gp-black) 0%, #1a1a2e 100%);
+      padding: 60px 0 40px 0;
+      text-align: center;
+      border-bottom: 5px solid var(--gp-blood-red);
+    }
+
+    .policy-header h1 {
+      color: var(--gp-blood-red);
+      font-weight: 800;
+      font-size: 2.5rem;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .policy-header p {
+      color: #aaa;
+      font-size: 1.1rem;
+    }
+
+    .policy-content {
+      background-color: #fff;
+    }
+
+    .policy-content .container {
+      max-width: 900px;
+    }
+
+    .policy-content h2 {
+      color: var(--gp-blood-red);
+      font-weight: 700;
+      font-size: 1.6rem;
+      margin-top: 2.5rem;
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid var(--gp-blood-red);
+      display: inline-block;
+    }
+
+    .policy-content h3 {
+      color: #333;
+      font-weight: 600;
+      font-size: 1.2rem;
+      margin-top: 1.5rem;
+      margin-bottom: 0.8rem;
+    }
+
+    .policy-content p {
+      color: #555;
+      line-height: 1.8;
+      font-size: 1rem;
+      margin-bottom: 1rem;
+      text-align: justify;
+    }
+
+    .policy-content ul, .policy-content ol {
+      color: #555;
+      line-height: 1.8;
+      font-size: 1rem;
+      padding-left: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .policy-content ul li, .policy-content ol li {
+      margin-bottom: 0.5rem;
+    }
+
+    .policy-content strong {
+      color: #333;
+    }
+
+    .policy-content .highlight-box {
+      background-color: rgba(168, 0, 0, 0.05);
+      border-left: 4px solid var(--gp-blood-red);
+      padding: 1.2rem 1.5rem;
+      margin: 1.5rem 0;
+      border-radius: 0 8px 8px 0;
+    }
+
+    .policy-content .highlight-box p {
+      margin-bottom: 0;
+    }
+
+    .policy-content .contact-card {
+      background: linear-gradient(135deg, var(--gp-black) 0%, #1a1a2e 100%);
+      color: #fff;
+      border-radius: 15px;
+      padding: 2rem;
+      margin-top: 2rem;
+    }
+
+    .policy-content .contact-card h2 {
+      color: #fff;
+      border-bottom: 2px solid var(--gp-blood-red);
+    }
+
+    .policy-content .contact-card p,
+    .policy-content .contact-card a {
+      color: #ccc;
+    }
+
+    .policy-content .contact-card a:hover {
+      color: var(--gp-blood-red);
+    }
+
+    .policy-content .contact-card .contact-info-item i {
+      color: var(--gp-blood-red);
+      font-size: 1.2rem;
+      width: 25px;
+      text-align: center;
+    }
+
+    .policy-toc {
+      background-color: #f8f9fa;
+      border: 1px solid #e9ecef;
+      border-radius: 10px;
+      padding: 1.5rem 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .policy-toc h3 {
+      color: var(--gp-blood-red);
+      margin-top: 0;
+      margin-bottom: 1rem;
+    }
+
+    .policy-toc ol {
+      margin-bottom: 0;
+      padding-left: 1.5rem;
+    }
+
+    .policy-toc li {
+      margin-bottom: 0.4rem;
+    }
+
+    .policy-toc a {
+      color: var(--gp-blood-red);
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .policy-toc a:hover {
+      color: #800000;
+      text-decoration: underline;
+    }
+
+    .last-updated {
+      background-color: rgba(168, 0, 0, 0.05);
+      border-radius: 8px;
+      padding: 1rem 1.5rem;
+      margin-bottom: 2rem;
+      text-align: center;
+      color: #555;
+      font-size: 0.95rem;
+    }
+
+    .last-updated i {
+      color: var(--gp-blood-red);
+      margin-right: 5px;
+    }
+
+    @media (max-width: 768px) {
+      .policy-header h1 {
+        font-size: 1.8rem;
+      }
+      .policy-content h2 {
+        font-size: 1.3rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "41608a73d5524531804ac808fbf45439"}'></script><!-- End Cloudflare Web Analytics -->
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NK35S8FG"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <div class="container nav-container">
+    <a href="index.html" class="logo d-flex align-items-center text-decoration-none text-white">
+      <!-- LOGO: CAJA ROJO SANGRE -->
+      <div class="logo-img">
+        <!-- Fallback texto si no carga imagen -->
+        <i class="fas fa-wrench"></i>
+      </div>
+      <div>
+        <div class="logo-text">GLOBALPRO</div>
+        <div class="logo-subtext">Taller Mecánico</div>
+      </div>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse desktop-menu" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html#mecanico-domicilio-seo">Mecánico a Domicilio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html#servicios">Servicios</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="comunasDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Comunas
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="comunasDropdown" style="max-height: 400px; overflow-y: auto;">
+            <li><a class="dropdown-item" href="index.html#contacto">Alhué</a></li><li><a class="dropdown-item" href="index.html#contacto">Buin</a></li><li><a class="dropdown-item" href="index.html#contacto">Calera de Tango</a></li><li><a class="dropdown-item" href="index.html#contacto">Cerrillos</a></li><li><a class="dropdown-item" href="index.html#contacto">Cerro Navia</a></li><li><a class="dropdown-item" href="index.html#contacto">Colina</a></li><li><a class="dropdown-item" href="index.html#contacto">Conchalí</a></li><li><a class="dropdown-item" href="index.html#contacto">Curacaví</a></li><li><a class="dropdown-item" href="index.html#contacto">El Bosque</a></li><li><a class="dropdown-item" href="index.html#contacto">El Monte</a></li><li><a class="dropdown-item" href="index.html#contacto">Estación Central</a></li><li><a class="dropdown-item" href="index.html#contacto">Huechuraba</a></li><li><a class="dropdown-item" href="index.html#contacto">Independencia</a></li><li><a class="dropdown-item" href="index.html#contacto">Isla de Maipo</a></li><li><a class="dropdown-item" href="index.html#contacto">La Cisterna</a></li><li><a class="dropdown-item" href="index.html#contacto">La Florida</a></li><li><a class="dropdown-item" href="index.html#contacto">La Granja</a></li><li><a class="dropdown-item" href="index.html#contacto">La Pintana</a></li><li><a class="dropdown-item" href="index.html#contacto">La Reina</a></li><li><a class="dropdown-item" href="index.html#contacto">Las Condes</a></li><li><a class="dropdown-item" href="index.html#contacto">Lampa</a></li><li><a class="dropdown-item" href="index.html#contacto">Lo Barnechea</a></li><li><a class="dropdown-item" href="index.html#contacto">Lo Espejo</a></li><li><a class="dropdown-item" href="index.html#contacto">Lo Prado</a></li><li><a class="dropdown-item" href="index.html#contacto">Macul</a></li><li><a class="dropdown-item" href="index.html#contacto">Maipú</a></li><li><a class="dropdown-item" href="index.html#contacto">María Pinto</a></li><li><a class="dropdown-item" href="index.html#contacto">Melipilla</a></li><li><a class="dropdown-item" href="index.html#contacto">Ñuñoa</a></li><li><a class="dropdown-item" href="index.html#contacto">Padre Hurtado</a></li><li><a class="dropdown-item" href="index.html#contacto">Paine</a></li><li><a class="dropdown-item" href="index.html#contacto">Pedro Aguirre Cerda</a></li><li><a class="dropdown-item" href="index.html#contacto">Peñaflor</a></li><li><a class="dropdown-item" href="index.html#contacto">Peñalolén</a></li><li><a class="dropdown-item" href="index.html#contacto">Pirque</a></li><li><a class="dropdown-item" href="index.html#contacto">Providencia</a></li><li><a class="dropdown-item" href="index.html#contacto">Pudahuel</a></li><li><a class="dropdown-item" href="index.html#contacto">Puente Alto</a></li><li><a class="dropdown-item" href="index.html#contacto">Quilicura</a></li><li><a class="dropdown-item" href="index.html#contacto">Quinta Normal</a></li><li><a class="dropdown-item" href="index.html#contacto">Recoleta</a></li><li><a class="dropdown-item" href="index.html#contacto">Renca</a></li><li><a class="dropdown-item" href="index.html#contacto">San Bernardo</a></li><li><a class="dropdown-item" href="index.html#contacto">San Joaquín</a></li><li><a class="dropdown-item" href="index.html#contacto">San José de Maipo</a></li><li><a class="dropdown-item" href="index.html#contacto">San Miguel</a></li><li><a class="dropdown-item" href="index.html#contacto">San Pedro</a></li><li><a class="dropdown-item" href="index.html#contacto">San Ramón</a></li><li><a class="dropdown-item" href="index.html#contacto">Santiago</a></li><li><a class="dropdown-item" href="index.html#contacto">Talagante</a></li><li><a class="dropdown-item" href="index.html#contacto">Tiltil</a></li><li><a class="dropdown-item" href="index.html#contacto">Vitacura</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="quienes-somos.html">Quiénes Somos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contacto.html">Contacto</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="blog/index.html">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="faq.html">FAQ</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="politica-privacidad.html">Privacidad</a>
+        </li>
+        <li class="nav-item">
+          <a href="https://wa.me/56939026185" class="whatsapp-btn" target="_blank">
+            <i class="fab fa-whatsapp me-2"></i> WhatsApp
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- POLICY HEADER -->
+<div class="policy-header">
+  <div class="container">
+    <h1><i class="fas fa-shield-alt me-3"></i>Política de Privacidad</h1>
+    <p>GlobalPro Automotriz — Taller Mecánico en Santiago, Chile</p>
+  </div>
+</div>
+
+<!-- POLICY CONTENT -->
+<section class="policy-content py-5">
+  <div class="container">
+
+    <div class="last-updated">
+      <i class="fas fa-calendar-alt"></i> Última actualización: <strong>01 de enero de 2025</strong>
+    </div>
+
+    <!-- TABLA DE CONTENIDOS -->
+    <div class="policy-toc">
+      <h3><i class="fas fa-list me-2"></i>Contenido</h3>
+      <ol>
+        <li><a href="#introduccion">Introducción</a></li>
+        <li><a href="#datos-recopilamos">Datos que recopilamos</a></li>
+        <li><a href="#finalidad-tratamiento">Finalidad del tratamiento de datos</a></li>
+        <li><a href="#base-legal">Base legal</a></li>
+        <li><a href="#compartir-datos">Compartir datos con terceros</a></li>
+        <li><a href="#almacenamiento-seguridad">Almacenamiento y seguridad</a></li>
+        <li><a href="#derechos-titular">Derechos del titular</a></li>
+        <li><a href="#cookies">Cookies</a></li>
+        <li><a href="#contacto-privacidad">Contacto para privacidad</a></li>
+        <li><a href="#modificaciones">Modificaciones</a></li>
+        <li><a href="#vigencia">Vigencia</a></li>
+      </ol>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- 1. INTRODUCCIÓN -->
+    <!-- ============================================================ -->
+    <h2 id="introduccion">1. Introducción</h2>
+    <p>
+      <strong>GlobalPro Automotriz</strong> se compromete a proteger la privacidad de sus clientes y usuarios. Esta Política de Privacidad describe cómo recopilamos, utilizamos, almacenamos y protegemos la información personal que usted nos proporciona al utilizar nuestros servicios de mecánica automotriz, tanto a domicilio como en nuestro taller ubicado en Santiago, Chile.
+    </p>
+    <p>
+      Al utilizar nuestros servicios, acceder a nuestro sitio web o comunicarse con nosotros a través de cualquiera de nuestros canales (WhatsApp, teléfono, correo electrónico o redes sociales), usted acepta las prácticas descritas en esta política. Le recomendamos leerla detenidamente para comprender cómo manejamos su información personal.
+    </p>
+    <p>
+      Nuestro compromiso es garantizar un manejo transparente, seguro y conforme a la normativa vigente en materia de protección de datos personales aplicable en la República de Chile.
+    </p>
+
+    <!-- ============================================================ -->
+    <!-- 2. DATOS QUE RECOPILAMOS -->
+    <!-- ============================================================ -->
+    <h2 id="datos-recopilamos">2. Datos que recopilamos</h2>
+    <p>
+      Para poder prestar nuestros servicios de mecánica automotriz de manera eficiente y personalizada, podemos recopilar los siguientes tipos de datos personales:
+    </p>
+
+    <h3><i class="fas fa-user text-primary me-2"></i>Datos de identificación del cliente</h3>
+    <ul>
+      <li><strong>Nombre completo</strong> del titular del vehículo o persona de contacto.</li>
+      <li><strong>Número de teléfono</strong> para coordinar el servicio y comunicaciones de seguimiento.</li>
+      <li><strong>Correo electrónico (email)</strong> para el envío de cotizaciones, facturas y notificaciones.</li>
+      <li><strong>RUT</strong> (Rol Único Tributario), cuando corresponda para la emisión de boletas o facturas.</li>
+    </ul>
+
+    <h3><i class="fas fa-car text-primary me-2"></i>Datos del vehículo</h3>
+    <ul>
+      <li><strong>Marca y modelo</strong> del vehículo para identificar repuestos y procedimientos adecuados.</li>
+      <li><strong>Patente</strong> del vehículo para registro interno y coordinación del servicio.</li>
+      <li><strong>Año de fabricación</strong> y versión del vehículo, cuando sea relevante para el diagnóstico.</li>
+      <li><strong>Kilometraje</strong> y historial de mantención, cuando el cliente lo proporciona.</li>
+    </ul>
+
+    <h3><i class="fas fa-clipboard-list text-primary me-2"></i>Datos del servicio solicitado</h3>
+    <ul>
+      <li><strong>Descripción del problema o servicio requerido</strong> (mantención preventiva, reparación, diagnóstico, etc.).</li>
+      <li><strong>Fotografías o videos</strong> del vehículo o la falla, cuando el cliente las comparte por WhatsApp o email.</li>
+      <li><strong>Fecha y hora preferida</strong> para la atención del servicio.</li>
+    </ul>
+
+    <h3><i class="fas fa-map-marker-alt text-primary me-2"></i>Datos de ubicación</h3>
+    <ul>
+      <li><strong>Dirección o ubicación</strong> donde se debe prestar el servicio a domicilio (comuna, calle, número, referencias).</li>
+      <li><strong>Ubicación por GPS</strong>, cuando el cliente la comparte voluntariamente para facilitar el despacho del técnico.</li>
+    </ul>
+
+    <h3><i class="fas fa-globe text-primary me-2"></i>Datos de navegación (sitio web)</h3>
+    <ul>
+      <li>Dirección IP, tipo de navegador, sistema operativo y páginas visitadas (recopilados mediante cookies y tecnologías similares).</li>
+      <li>Datos de uso y comportamiento de navegación para mejorar la experiencia del usuario.</li>
+    </ul>
+
+    <!-- ============================================================ -->
+    <!-- 3. FINALIDAD DEL TRATAMIENTO DE DATOS -->
+    <!-- ============================================================ -->
+    <h2 id="finalidad-tratamiento">3. Finalidad del tratamiento de datos</h2>
+    <p>
+      Los datos personales que recopilamos son utilizados exclusivamente para las siguientes finalidades:
+    </p>
+    <ol>
+      <li><strong>Prestación de servicios mecánicos:</strong> Coordinar, programar y ejecutar el servicio de mecánica a domicilio o en taller solicitado por el cliente, incluyendo el diagnóstico, reparación y mantención de vehículos.</li>
+      <li><strong>Contacto y comunicación:</strong> Comunicarse con el cliente para confirmar citas, informar sobre el estado del servicio, enviar cotizaciones y responder consultas.</li>
+      <li><strong>Facturación y cumplimiento tributario:</strong> Emitir documentos tributarios (boletas de honorarios, facturas) conforme a la normativa del Servicio de Impuestos Internos (SII) de Chile.</li>
+      <li><strong>Mejora de servicios:</strong> Analizar la información recopilada para mejorar la calidad de nuestros servicios, optimizar tiempos de respuesta y adaptar nuestra oferta a las necesidades de los clientes.</li>
+      <li><strong>Garantía y seguimiento:</strong> Llevar un registro del servicio prestado para hacer efectiva la garantía ofrecida y realizar seguimiento post-servicio.</li>
+      <li><strong>Comunicaciones comerciales (con consentimiento):</strong> Enviar ofertas especiales, promociones o novedades sobre nuestros servicios, solo cuando el cliente ha otorgado su consentimiento expreso para recibir dichas comunicaciones.</li>
+      <li><strong>Cumplimiento de obligaciones legales:</strong> Cumplir con las exigencias legales y regulatorias aplicables a nuestra actividad comercial en Chile.</li>
+    </ol>
+
+    <!-- ============================================================ -->
+    <!-- 4. BASE LEGAL -->
+    <!-- ============================================================ -->
+    <h2 id="base-legal">4. Base legal</h2>
+    <p>
+      El tratamiento de sus datos personales se realiza sobre la base de las siguientes fundamentaciones legales, conforme a la <strong>Ley 19.628 sobre Protección de Datos Personales</strong> de la República de Chile:
+    </p>
+    <ul>
+      <li>
+        <strong>Consentimiento del titular:</strong> Cuando usted nos proporciona sus datos de forma voluntaria al solicitar un servicio, completar un formulario, enviarnos un mensaje por WhatsApp o llamar por teléfono, nos otorga su consentimiento para tratar sus datos con las finalidades descritas en esta política.
+      </li>
+      <li>
+        <strong>Ejecución contractual:</strong> El tratamiento de sus datos es necesario para la ejecución del contrato de prestación de servicios mecánicos que usted ha solicitado. Sin sus datos de contacto e información del vehículo, no sería posible prestar el servicio.
+      </li>
+      <li>
+        <strong>Interés legítimo:</strong> Algunos datos son tratados sobre la base de nuestro interés legítimo, como por ejemplo mantener un registro de servicios para garantizar la calidad, mejorar nuestros procesos y ofrecer un mejor servicio. En todos los casos, este interés legítimo se ejerce respetando siempre los derechos y libertades del titular de los datos.
+      </li>
+      <li>
+        <strong>Obligaciones legales:</strong> Tratamos ciertos datos para cumplir con obligaciones impuestas por la normativa tributaria chilena (emisión de documentos tributarios, conservación de registros contables) y otras disposiciones legales aplicables.
+      </li>
+    </ul>
+
+    <div class="highlight-box">
+      <p>
+        <i class="fas fa-info-circle text-primary me-2"></i>
+        <strong>Nota:</strong> GlobalPro Automotriz se compromete a tratar sus datos personales de acuerdo con la Ley 19.628 y las mejores prácticas de protección de datos. En caso de conflicto o duda sobre el tratamiento de sus datos, puede ejercer sus derechos como titular en cualquier momento.
+      </p>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- 5. COMPARTIR DATOS CON TERCEROS -->
+    <!-- ============================================================ -->
+    <h2 id="compartir-datos">5. Compartir datos con terceros</h2>
+    <p>
+      <strong>GlobalPro Automotriz</strong> no vende, alquila ni comparte sus datos personales con terceros con fines comerciales. Sin embargo, podemos compartir información con ciertos terceros <strong>solo cuando sea estrictamente necesario</strong> para la prestación de nuestros servicios y siempre bajo condiciones de confidencialidad:
+    </p>
+    <ul>
+      <li>
+        <strong>Proveedores de repuestos y accesorios:</strong> Podemos compartir datos del vehículo (marca, modelo, patente) con proveedores para gestionar la adquisición de repuestos específicos necesarios para la reparación.
+      </li>
+      <li>
+        <strong>Plataformas de pago y facturación:</strong> Datos necesarios para procesar pagos y emitir documentos tributarios conforme a la normativa del SII.
+      </li>
+      <li>
+        <strong>Servicios de logística y despacho:</strong> Cuando sea necesario coordinar el traslado de repuestos o equipos técnicos hacia la ubicación del cliente.
+      </li>
+      <li>
+        <strong>Prestadores de servicios tecnológicos:</strong> Proveedores de herramientas de análisis web (Google Analytics), hosting (Cloudflare) y comunicación (WhatsApp Business) que procesan datos según sus propias políticas de privacidad y bajo estrictos acuerdos de confidencialidad.
+      </li>
+    </ul>
+    <p>
+      En todos los casos anteriores, los terceros están obligados a tratar sus datos personales de manera confidencial y únicamente para los fines autorizados. <strong>Ningún dato personal será compartido sin su consentimiento previo</strong>, salvo cuando sea requerido por autoridad competente o por disposición legal.
+    </p>
+
+    <!-- ============================================================ -->
+    <!-- 6. ALMACENAMIENTO Y SEGURIDAD -->
+    <!-- ============================================================ -->
+    <h2 id="almacenamiento-seguridad">6. Almacenamiento y seguridad</h2>
+    <p>
+      En <strong>GlobalPro Automotriz</strong> implementamos medidas de seguridad técnicas y organizativas apropiadas para proteger sus datos personales contra acceso no autorizado, pérdida, alteración, destrucción o tratamiento indebido.
+    </p>
+
+    <h3><i class="fas fa-lock text-primary me-2"></i>Medidas de seguridad técnicas</h3>
+    <ul>
+      <li><strong>Encriptación SSL/TLS</strong> en nuestro sitio web para proteger la transmisión de datos entre su navegador y nuestros servidores.</li>
+      <li><strong>Firewall y protección contra ataques</strong> mediante Cloudflare para prevenir accesos maliciosos.</li>
+      <li><strong>Control de acceso</strong> restringido a la información personal; solo el personal autorizado tiene acceso a los datos de los clientes.</li>
+      <li><strong>Respaldo periódico</strong> de la información para prevenir pérdida de datos.</li>
+      <li><strong>Software actualizado</strong> y parches de seguridad en todos los sistemas que procesan datos personales.</li>
+    </ul>
+
+    <h3><i class="fas fa-users-cog text-primary me-2"></i>Medidas organizativas</h3>
+    <ul>
+      <li><strong>Capacitación del personal</strong> en buenas prácticas de protección de datos y confidencialidad.</li>
+      <li><strong>Políticas internas</strong> de manejo y protección de información personal.</li>
+      <li><strong>Confidencialidad contractual</strong> con todos los colaboradores y proveedores que acceden a datos personales.</li>
+      <li><strong>Minimización de datos:</strong> Solo recopilamos los datos estrictamente necesarios para la finalidad prevista.</li>
+    </ul>
+
+    <h3><i class="fas fa-clock text-primary me-2"></i>Periodo de almacenamiento</h3>
+    <p>
+      Los datos personales se conservarán durante el tiempo necesario para cumplir con la finalidad para la que fueron recopilados, y mientras existan obligaciones legales que exijan su conservación (por ejemplo, obligaciones tributarias). Una vez que ya no sean necesarios, los datos serán eliminados o anonimizados de forma segura.
+    </p>
+
+    <!-- ============================================================ -->
+    <!-- 7. DERECHOS DEL TITULAR -->
+    <!-- ============================================================ -->
+    <h2 id="derechos-titular">7. Derechos del titular</h2>
+    <p>
+      De acuerdo con la <strong>Ley 19.628 sobre Protección de Datos Personales</strong> y los principios generales de protección de datos, usted como titular de sus datos personales tiene los siguientes derechos (derechos ARCO):
+    </p>
+
+    <div class="row g-4 mb-4">
+      <div class="col-md-6">
+        <div class="d-flex align-items-start gap-3 p-3 bg-white rounded shadow-sm" style="border-left: 4px solid var(--gp-blood-red);">
+          <div style="min-width:45px;height:45px;border-radius:10px;background:var(--gp-blood-red);display:flex;align-items:center;justify-content:center;color:#fff;font-size:1.1rem;flex-shrink:0;">
+            <i class="fas fa-search"></i>
+          </div>
+          <div>
+            <h6 class="fw-bold text-dark mb-1">Derecho de Acceso</h6>
+            <p class="small text-muted mb-0">Solicitar información sobre los datos personales que tenemos de usted y cómo los tratamos.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="d-flex align-items-start gap-3 p-3 bg-white rounded shadow-sm" style="border-left: 4px solid var(--gp-blood-red);">
+          <div style="min-width:45px;height:45px;border-radius:10px;background:var(--gp-blood-red);display:flex;align-items:center;justify-content:center;color:#fff;font-size:1.1rem;flex-shrink:0;">
+            <i class="fas fa-edit"></i>
+          </div>
+          <div>
+            <h6 class="fw-bold text-dark mb-1">Derecho de Rectificación</h6>
+            <p class="small text-muted mb-0">Solicitar la corrección de datos personales inexactos o incompletos que tengamos registrados.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="d-flex align-items-start gap-3 p-3 bg-white rounded shadow-sm" style="border-left: 4px solid var(--gp-blood-red);">
+          <div style="min-width:45px;height:45px;border-radius:10px;background:var(--gp-blood-red);display:flex;align-items:center;justify-content:center;color:#fff;font-size:1.1rem;flex-shrink:0;">
+            <i class="fas fa-trash-alt"></i>
+          </div>
+          <div>
+            <h6 class="fw-bold text-dark mb-1">Derecho de Cancelación (Supresión)</h6>
+            <p class="small text-muted mb-0">Solicitar la eliminación de sus datos personales cuando ya no sean necesarios para la finalidad prevista.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="d-flex align-items-start gap-3 p-3 bg-white rounded shadow-sm" style="border-left: 4px solid var(--gp-blood-red);">
+          <div style="min-width:45px;height:45px;border-radius:10px;background:var(--gp-blood-red);display:flex;align-items:center;justify-content:center;color:#fff;font-size:1.1rem;flex-shrink:0;">
+            <i class="fas fa-ban"></i>
+          </div>
+          <div>
+            <h6 class="fw-bold text-dark mb-1">Derecho de Oposición</h6>
+            <p class="small text-muted mb-0">Oponerse al tratamiento de sus datos personales por motivos legítimos, incluyendo el uso para fines publicitarios.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <p>
+      Para ejercer cualquiera de estos derechos, puede contactarnos a través de los medios indicados en la sección <a href="#contacto-privacidad"><strong>Contacto para privacidad</strong></a> más abajo. Responderemos a su solicitud en un plazo máximo de <strong>10 días hábiles</strong> conforme lo establece la normativa vigente.
+    </p>
+
+    <!-- ============================================================ -->
+    <!-- 8. COOKIES -->
+    <!-- ============================================================ -->
+    <h2 id="cookies">8. Cookies</h2>
+    <p>
+      Nuestro sitio web utiliza <strong>cookies</strong> y tecnologías similares para mejorar la experiencia de navegación, analizar el tráfico del sitio y comprender cómo los usuarios interactúan con nuestro contenido.
+    </p>
+
+    <h3><i class="fas fa-cookie-bite text-primary me-2"></i>¿Qué son las cookies?</h3>
+    <p>
+      Las cookies son pequeños archivos de texto que se almacenan en su dispositivo (computador, teléfono o tablet) cuando visita nuestro sitio web. Permiten que el sitio recuerde sus preferencias y comportamientos durante futuras visitas.
+    </p>
+
+    <h3><i class="fas fa-cogs text-primary me-2"></i>Tipos de cookies que utilizamos</h3>
+    <ul>
+      <li>
+        <strong>Cookies técnicas (esenciales):</strong> Son necesarias para el funcionamiento básico del sitio web. Permiten la navegación, el uso de funciones seguras y el acceso a áreas privadas. Sin estas cookies, el sitio no puede funcionar correctamente.
+      </li>
+      <li>
+        <strong>Cookies de análisis (Google Analytics):</strong> Nos ayudan a comprender cómo los visitantes interactúan con nuestro sitio web, recopilando información de forma anónima (dirección IP anonimizada, páginas visitadas, tiempo de permanencia, fuente de tráfico). Utilizamos esta información para mejorar el contenido y la estructura de nuestro sitio.
+      </li>
+      <li>
+        <strong>Cookies de rendimiento (Cloudflare):</strong> Utilizamos Cloudflare como proveedor de CDN y seguridad. Cloudflare puede establecer cookies para optimizar la velocidad de carga, detectar bots y proteger el sitio contra ataques maliciosos.
+      </li>
+    </ul>
+
+    <h3><i class="fas fa-sliders-h text-primary me-2"></i>Gestión de cookies</h3>
+    <p>
+      Usted puede configurar su navegador para rechazar cookies o alertarle cuando se esté enviando una cookie. Tenga en cuenta que la desactivación de cookies puede afectar la funcionalidad de nuestro sitio web. A continuación, le indicamos cómo gestionar las cookies en los navegadores más comunes:
+    </p>
+    <ul>
+      <li><strong>Google Chrome:</strong> Configuración &gt; Privacidad y seguridad &gt; Cookies y otros datos de sitios</li>
+      <li><strong>Mozilla Firefox:</strong> Opciones &gt; Privacidad y seguridad &gt; Cookies y datos del sitio</li>
+      <li><strong>Safari:</strong> Preferencias &gt; Privacidad &gt; Cookies y datos de sitios web</li>
+      <li><strong>Microsoft Edge:</strong> Configuración &gt; Cookies y permisos del sitio &gt; Cookies y datos almacenados</li>
+    </ul>
+
+    <div class="highlight-box">
+      <p>
+        <i class="fas fa-exclamation-circle text-primary me-2"></i>
+        <strong>Importante:</strong> Para obtener más información sobre las cookies de Google Analytics, puede consultar la <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" style="color: var(--gp-blood-red);">Política de Privacidad de Google</a>. Para más información sobre Cloudflare, consulte la <a href="https://www.cloudflare.com/es-es/privacypolicy/" target="_blank" rel="noopener noreferrer" style="color: var(--gp-blood-red);">Política de Privacidad de Cloudflare</a>.
+      </p>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- 9. CONTACTO PARA PRIVACIDAD -->
+    <!-- ============================================================ -->
+    <div class="contact-card" id="contacto-privacidad">
+      <h2><i class="fas fa-envelope me-2"></i>9. Contacto para privacidad</h2>
+      <p>
+        Si tiene preguntas, comentarios o solicitudes relacionadas con esta Política de Privacidad o con el tratamiento de sus datos personales, puede contactarnos a través de los siguientes medios:
+      </p>
+      <div class="row mt-4">
+        <div class="col-md-6 mb-3">
+          <div class="contact-info-item">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <strong>Correo electrónico:</strong><br>
+              <a href="mailto:contacto@globalpro.cl">contacto@globalpro.cl</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-3">
+          <div class="contact-info-item">
+            <i class="fas fa-phone-alt"></i>
+            <div>
+              <strong>Teléfono:</strong><br>
+              <a href="tel:+56939026185">+56 9 3902 6185</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-3">
+          <div class="contact-info-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <strong>Dirección:</strong><br>
+              Av. Padre Alberto Hurtado 3598,<br>
+              Pedro Aguirre Cerda, Santiago, Chile
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-3">
+          <div class="contact-info-item">
+            <i class="fab fa-whatsapp"></i>
+            <div>
+              <strong>WhatsApp:</strong><br>
+              <a href="https://wa.me/56939026185" target="_blank">+56 9 3902 6185</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="mt-3 mb-0" style="font-size: 0.9rem; color: #999;">
+        Nos comprometemos a responder su consulta o solicitud dentro de un plazo máximo de 10 días hábiles, conforme a la normativa vigente.
+      </p>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- 10. MODIFICACIONES -->
+    <!-- ============================================================ -->
+    <h2 id="modificaciones">10. Modificaciones</h2>
+    <p>
+      <strong>GlobalPro Automotriz</strong> se reserva el derecho de modificar esta Política de Privacidad en cualquier momento, con el fin de adaptarla a cambios legislativos, regulatorios, tecnológicos o a las mejores prácticas del sector.
+    </p>
+    <p>
+      Cualquier modificación será publicada en esta página con la fecha de última actualización correspondiente. Le recomendamos revisar periódicamente esta política para mantenerse informado sobre cómo protegemos sus datos.
+    </p>
+    <p>
+      En caso de realizar cambios sustanciales que afecten significativamente el tratamiento de sus datos personales, nos esforzaremos por notificarle a través de los canales de comunicación habituales (correo electrónico, WhatsApp o aviso visible en nuestro sitio web).
+    </p>
+
+    <!-- ============================================================ -->
+    <!-- 11. VIGENCIA -->
+    <!-- ============================================================ -->
+    <h2 id="vigencia">11. Vigencia</h2>
+    <p>
+      La presente <strong>Política de Privacidad</strong> entra en vigencia a partir del <strong>01 de enero de 2025</strong> y sustituye cualquier política de privacidad anterior que hubiera estado vigente.
+    </p>
+    <p>
+      Esta política se aplicará a todos los tratamientos de datos personales realizados por <strong>GlobalPro Automotriz</strong> desde la fecha indicada, independientemente de la fecha en que los datos fueron recopilados originalmente.
+    </p>
+
+    <div class="highlight-box mt-4">
+      <p>
+        <i class="fas fa-shield-alt text-primary me-2"></i>
+        <strong>GlobalPro Automotriz</strong> agradece su confianza en nuestros servicios. Nos comprometemos a cuidar y proteger sus datos personales con la máxima diligencia y responsabilidad, conforme a la normativa chilena vigente y los más altos estándares de seguridad.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="main-footer">
+  <div class="container">
+    <div class="row">
+      <!-- COLUMNA 1: SOBRE NOSOTROS -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="footer-logo-box">
+          <i class="fas fa-wrench"></i>
+        </div>
+        <h5 class="footer-title">GlobalPro</h5>
+        <p class="text-justify">
+          Somos líderes en <strong>Mecánico a Domicilio</strong> en Santiago. Ofrecemos servicio automotriz integral con tecnología de punta y profesionales certificados. Tu vehículo en las mejores manos, donde tú estés.
+        </p>
+        <div class="social-icons mt-3">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <!-- COLUMNA 2: ENLACES RÁPIDOS -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <h5 class="footer-title">Enlaces Rápidos</h5>
+        <div class="footer-links">
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="index.html#mecanico-domicilio-seo">Mecánico a Domicilio</a></li>
+            <li><a href="index.html#servicios">Nuestros Servicios</a></li>
+            <li><a href="faq.html">Preguntas Frecuentes</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="quienes-somos.html">Quiénes Somos</a></li>
+            <li><a href="politica-privacidad.html">Política de Privacidad</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- COLUMNA 3: CONTACTO -->
+      <div class="col-lg-4 col-md-12 mb-4">
+        <h5 class="footer-title">Información de Contacto</h5>
+        
+        <div class="contact-info-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <div>
+            <strong>Ubicación:</strong><br>
+            Servicio a Domicilio en todo Santiago<br>
+            Base: Pedro Aguirre Cerda, RM
+          </div>
+        </div>
+
+        <div class="contact-info-item">
+          <i class="fas fa-phone-alt"></i>
+          <div>
+            <strong>Teléfono:</strong><br>
+            <a href="tel:939026185" style="color:#bbb; text-decoration:none;">+569 39026185</a>
+          </div>
+        </div>
+
+        <div class="contact-info-item">
+          <i class="fas fa-envelope"></i>
+          <div>
+            <strong>Email:</strong><br>
+            <a href="mailto:contacto@globalpro.cl" style="color:#bbb; text-decoration:none;">contacto@globalpro.cl</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- BARRA DE COPYRIGHT -->
+  <div class="copyright-bar">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 text-center text-md-start">
+          &copy; 2024 GlobalPro. Todos los derechos reservados.
+        </div>
+        <div class="col-md-6 text-center text-md-end">
+          Especialistas en <strong>Mecánico a Domicilio</strong> | Servicio Automotriz Integral
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- STICKY BOTTOM BAR -->
+<div class="sticky-bottom-bar">
+  <div class="big-buttons-container">
+    
+    <!-- Botón Llamada (Rojo Grande) -->
+    <a href="tel:939026185" class="btn-massive-call">
+      <i class="fas fa-phone-alt"></i> LLAMAR
+    </a>
+
+    <!-- Botón Chat IA (Centro Pequeño) -->
+    <a href="index.html" class="btn-small-chat" title="Inicio">
+      <i class="fas fa-home"></i>
+    </a>
+
+    <!-- Botón WhatsApp (Verde Grande) -->
+    <a href="https://wa.me/56939026185?text=Hola%20te%20escribo%20desde%20la%20pagina%20web%20estoy%20interesado%20en%20tus%20servicios" class="btn-massive-wa" target="_blank">
+      <i class="fab fa-whatsapp"></i> WhatsApp
+    </a>
+
+  </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Custom JS Original -->
+<script src="js/script.js"></script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const counterElement = document.getElementById('live-count');
+    
+    let baseVisitas = 123; 
+    
+    let visitasGuardadas = localStorage.getItem('global_total_visits');
+    
+    if (!visitasGuardadas) {
+      visitasGuardadas = baseVisitas;
+    } else {
+      visitasGuardadas = parseInt(visitasGuardadas);
+    }
+
+    if (!sessionStorage.getItem('session_active')) {
+      visitasGuardadas += 1;
+      localStorage.setItem('global_total_visits', visitasGuardadas);
+      sessionStorage.setItem('session_active', 'true');
+    }
+
+    counterElement.innerText = visitasGuardadas.toLocaleString('es-CL');
+  });
+</script>
+
+</body>
+</html>

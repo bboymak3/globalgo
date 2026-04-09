@@ -1,0 +1,1372 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+<div id="floating-counter">
+  <i class="fas fa-users"></i> 
+  <span id="live-count">0</span>
+  <div class="label-visitor">Visitantes</div>
+</div>
+
+<style>
+  #floating-counter {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: linear-gradient(135deg, #FFC107 0%, #ff9800 100%);
+    color: #000;
+    padding: 10px 18px;
+    border-radius: 50px;
+    font-weight: 800;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    z-index: 10001;
+    border: 2px solid #fff;
+    cursor: default;
+    animation: pulse-yellow 2s infinite;
+    transition: transform 0.3s ease;
+  }
+
+  #floating-counter:hover {
+    transform: scale(1.1);
+  }
+
+  .label-visitor {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    display: block;
+    line-height: 1;
+    color: #333;
+  }
+
+  @keyframes pulse-yellow {
+    0% { box-shadow: 0 0 0 0 rgba(255, 193, 7, 0.7); }
+    70% { box-shadow: 0 0 0 10px rgba(255, 193, 7, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(255, 193, 7, 0); }
+  }
+
+  @media (max-width: 768px) {
+    #floating-counter {
+      top: 80px;
+      right: 10px;
+      padding: 8px 14px;
+      font-size: 0.9rem;
+    }
+  }
+</style>
+
+<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "41608a73d5524531804ac808fbf45439"}'></script><!-- End Cloudflare Web Analytics -->
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NK35S8FG');</script>
+<!-- End Google Tag Manager -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  
+  <link rel="icon" type="image/png" href="images/mecanico-a-domicilio-en-santiago.png"/>
+  <link rel="apple-touch-icon" href="images/mecanico-a-domicilio-en-santiago.png"/>
+
+  <title>Quiénes Somos - GlobalPro Automotriz | Mecánico a Domicilio 24/7 en Santiago</title>
+  <meta name="description" content="Conoce GlobalPro Automotriz: más de 15 años de experiencia como mecánico a domicilio en Santiago. Especialistas en motor, frenos y electricidad. Rating 4.9 en Google con 141 opiniones. Servicio 24/7 en toda la Región Metropolitana."/>
+  <link rel="canonical" href="https://globalpro.pages.dev/quienes-somos.html"/>
+  
+  <meta property="og:title" content="Quiénes Somos - GlobalPro Automotriz | Mecánico a Domicilio 24/7 en Santiago"/>
+  <meta property="og:description" content="Conoce GlobalPro Automotriz: más de 15 años de experiencia como mecánico a domicilio en Santiago. Especialistas en motor, frenos y electricidad. Rating 4.9 en Google."/>
+  <meta property="og:image" content="https://globalpro.pages.dev/images/mecanico-a-domicilio-en-santiago.png"/>
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+  <meta property="og:url" content="https://globalpro.pages.dev/quienes-somos.html"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:locale" content="es_CL"/>
+  <meta property="og:site_name" content="GlobalPro Automotriz"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="Quiénes Somos - GlobalPro Automotriz | Mecánico a Domicilio 24/7 en Santiago"/>
+  <meta name="twitter:description" content="Conoce GlobalPro Automotriz: más de 15 años de experiencia como mecánico a domicilio en Santiago. Especialistas en motor, frenos y electricidad. Rating 4.9 en Google."/>
+  <meta name="twitter:image" content="https://globalpro.pages.dev/images/mecanico-a-domicilio-en-santiago.png"/>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link rel="stylesheet" href="css/styles.css"/>
+  <script src="https://elfsightcdn.com/platform.js" async></script>
+
+  <style>
+    :root {
+      --gp-blood-red: #a80000; 
+      --gp-black: #121212;
+    }
+
+    html { 
+      scroll-behavior: smooth; 
+      scroll-padding-bottom: 120px;
+    }
+    
+    body {
+      padding-top: 76px;
+      padding-bottom: 110px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fff;
+    }
+
+    .text-primary { color: var(--gp-blood-red) !important; }
+    
+    .btn-primary {
+      background-color: var(--gp-blood-red) !important;
+      border-color: var(--gp-blood-red) !important;
+      color: white !important;
+    }
+    .btn-primary:hover, .btn-primary:focus {
+      background-color: #800000 !important;
+      border-color: #800000 !important;
+      box-shadow: 0 0 15px rgba(168, 0, 0, 0.4);
+    }
+    
+    .bg-primary { background-color: var(--gp-blood-red) !important; }
+    .border-primary { border-color: var(--gp-blood-red) !important; }
+
+    .nav-link { color: #ccc !important; transition: 0.3s; }
+    .nav-link:hover, .nav-link.active { color: var(--gp-blood-red) !important; }
+
+    .logo-img {
+      background-color: var(--gp-blood-red); 
+      width: 50px; height: 50px; display: flex; align-items: center; justify-content: center;
+      border-radius: 8px; margin-right: 15px; overflow: hidden; 
+      color: white; font-weight: bold; font-size: 1.2rem;
+    }
+    .logo-img img {
+      width: 100%; height: 100%; object-fit: contain; padding: 5px;
+    }
+
+    body, .navbar, .container, .container-fluid {
+      overflow-x: hidden !important;
+      max-width: 100%;
+    }
+    .nav-container {
+      padding: 0 15px;
+    }
+
+    /* ===== HERO BANNER ===== */
+    .page-hero {
+      background: linear-gradient(135deg, var(--gp-black) 0%, #1a1a2e 50%, var(--gp-blood-red) 100%);
+      padding: 100px 0 60px 0;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .page-hero::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: url('images/image1.jpg') center center no-repeat;
+      background-size: cover;
+      opacity: 0.15;
+    }
+    .page-hero .container {
+      position: relative;
+      z-index: 2;
+    }
+    .page-hero h1 {
+      color: #fff;
+      font-weight: 800;
+      font-size: 3rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 1rem;
+    }
+    .page-hero p {
+      color: rgba(255,255,255,0.85);
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    .page-hero .breadcrumb {
+      justify-content: center;
+      margin-top: 1.5rem;
+    }
+    .page-hero .breadcrumb-item a {
+      color: rgba(255,255,255,0.7);
+      text-decoration: none;
+    }
+    .page-hero .breadcrumb-item a:hover {
+      color: #fff;
+    }
+    .page-hero .breadcrumb-item.active {
+      color: var(--gp-blood-red);
+      font-weight: 600;
+    }
+    .page-hero .breadcrumb-item + .breadcrumb-item::before {
+      color: rgba(255,255,255,0.5);
+    }
+
+    /* ===== SECTION TITLES ===== */
+    .section-title {
+      color: var(--gp-blood-red);
+      font-weight: 800;
+      font-size: 2.2rem;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+      position: relative;
+      display: inline-block;
+    }
+    .section-title::after {
+      content: '';
+      display: block;
+      width: 80px;
+      height: 4px;
+      background-color: var(--gp-blood-red);
+      margin: 12px auto 0;
+      border-radius: 2px;
+    }
+    .section-subtitle {
+      color: #666;
+      font-size: 1.1rem;
+      max-width: 700px;
+      margin: 0 auto 3rem;
+    }
+
+    /* ===== STATS SECTION ===== */
+    .stats-section {
+      background-color: var(--gp-black);
+      padding: 60px 0;
+      position: relative;
+    }
+    .stats-section::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background-color: var(--gp-blood-red);
+    }
+    .stat-card {
+      text-align: center;
+      padding: 30px 20px;
+      transition: transform 0.3s;
+    }
+    .stat-card:hover {
+      transform: translateY(-5px);
+    }
+    .stat-icon {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background-color: var(--gp-blood-red);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 20px;
+      font-size: 2rem;
+      color: #fff;
+    }
+    .stat-number {
+      color: #fff;
+      font-size: 2.8rem;
+      font-weight: 800;
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+    .stat-label {
+      color: rgba(255,255,255,0.7);
+      font-size: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: 600;
+    }
+
+    /* ===== VALUES SECTION ===== */
+    .value-card {
+      background: white;
+      border-radius: 15px;
+      padding: 40px 30px;
+      text-align: center;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+      transition: transform 0.3s, box-shadow 0.3s;
+      height: 100%;
+      border-top: 4px solid var(--gp-blood-red);
+    }
+    .value-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+    }
+    .value-icon {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      background-color: rgba(168, 0, 0, 0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 20px;
+      font-size: 1.8rem;
+      color: var(--gp-blood-red);
+    }
+    .value-card h4 {
+      font-weight: 700;
+      color: #222;
+      margin-bottom: 15px;
+      font-size: 1.2rem;
+    }
+    .value-card p {
+      color: #666;
+      font-size: 0.95rem;
+      line-height: 1.7;
+      margin-bottom: 0;
+    }
+
+    /* ===== GOOGLE RATING SECTION ===== */
+    .rating-section {
+      background-color: #f8f9fa;
+      padding: 80px 0;
+      border-top: 4px solid var(--gp-blood-red);
+      border-bottom: 4px solid var(--gp-blood-red);
+    }
+    .rating-badge {
+      background: white;
+      border-radius: 20px;
+      padding: 50px 40px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+      text-align: center;
+      max-width: 600px;
+      margin: 0 auto;
+      position: relative;
+      overflow: hidden;
+    }
+    .rating-badge::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 5px;
+      background: linear-gradient(90deg, #4285F4, #EA4335, #FBBC05, #34A853);
+    }
+    .google-logo {
+      width: 60px;
+      margin-bottom: 20px;
+    }
+    .rating-stars {
+      font-size: 2.5rem;
+      color: #FBBC05;
+      margin-bottom: 10px;
+    }
+    .rating-number {
+      font-size: 4rem;
+      font-weight: 800;
+      color: var(--gp-blood-red);
+      line-height: 1;
+      margin-bottom: 5px;
+    }
+    .rating-total {
+      color: #888;
+      font-size: 1.1rem;
+      margin-bottom: 20px;
+    }
+    .rating-bar-container {
+      background-color: #e0e0e0;
+      border-radius: 10px;
+      height: 12px;
+      overflow: hidden;
+      margin-bottom: 8px;
+    }
+    .rating-bar-fill {
+      height: 100%;
+      border-radius: 10px;
+      background: linear-gradient(90deg, #FBBC05, #F9A825);
+    }
+    .rating-bar-label {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.85rem;
+      color: #666;
+      margin-bottom: 15px;
+    }
+
+    /* ===== ABOUT SECTION ===== */
+    .about-section {
+      padding: 80px 0;
+    }
+    .about-image-wrapper {
+      position: relative;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    }
+    .about-image-wrapper img {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+    }
+    .about-image-badge {
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+      background-color: var(--gp-blood-red);
+      color: white;
+      padding: 15px 25px;
+      border-radius: 12px;
+      font-weight: 700;
+      font-size: 1.1rem;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    }
+    .about-content h2 {
+      color: #222;
+      font-weight: 800;
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+    }
+    .about-content p {
+      color: #555;
+      font-size: 1.05rem;
+      line-height: 1.8;
+      margin-bottom: 1.2rem;
+      text-align: justify;
+    }
+    .about-feature {
+      display: flex;
+      align-items: flex-start;
+      gap: 15px;
+      margin-bottom: 15px;
+    }
+    .about-feature-icon {
+      width: 45px;
+      height: 45px;
+      min-width: 45px;
+      border-radius: 10px;
+      background-color: var(--gp-blood-red);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 1rem;
+    }
+    .about-feature h6 {
+      font-weight: 700;
+      color: #222;
+      margin-bottom: 3px;
+    }
+    .about-feature p {
+      font-size: 0.9rem;
+      margin-bottom: 0;
+      text-align: left;
+    }
+
+    /* ===== MISSION VISION ===== */
+    .mv-section {
+      background-color: var(--gp-black);
+      padding: 80px 0;
+      color: white;
+    }
+    .mv-card {
+      padding: 40px 30px;
+      border-radius: 15px;
+      height: 100%;
+      border: 2px solid rgba(168,0,0,0.3);
+      transition: border-color 0.3s, transform 0.3s;
+    }
+    .mv-card:hover {
+      border-color: var(--gp-blood-red);
+      transform: translateY(-5px);
+    }
+    .mv-card-icon {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background-color: var(--gp-blood-red);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      color: white;
+      margin-bottom: 20px;
+    }
+    .mv-card h3 {
+      font-weight: 700;
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+    }
+    .mv-card p {
+      color: rgba(255,255,255,0.75);
+      font-size: 1rem;
+      line-height: 1.8;
+      margin-bottom: 0;
+    }
+
+    /* ===== STICKY BOTTOM BAR ===== */
+    .sticky-bottom-bar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 90px;
+      background-color: var(--gp-black);
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0 15px;
+      z-index: 9999;
+      box-shadow: 0 -4px 15px rgba(0,0,0,0.6);
+      border-top: 3px solid var(--gp-blood-red);
+    }
+
+    .big-buttons-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      max-width: 100%; 
+      gap: 10px;
+      height: 100%;
+    }
+
+    .btn-massive-call {
+      flex: 1;
+      height: 70px;
+      background-color: #D32F2F;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-size: 1.5rem;
+      font-weight: 800;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+      text-transform: uppercase;
+      transition: transform 0.2s, background-color 0.2s;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+      animation: pulse-red 2s infinite;
+    }
+
+    @keyframes pulse-red {
+      0% { box-shadow: 0 0 0 0 rgba(211, 47, 47, 0.7); }
+      70% { box-shadow: 0 0 0 10px rgba(211, 47, 47, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(211, 47, 47, 0); }
+    }
+
+    .btn-massive-call:hover {
+      transform: scale(1.02);
+      background-color: #b71c1c;
+      color: white;
+    }
+
+    .btn-massive-wa {
+      flex: 1;
+      height: 70px;
+      background-color: #25D366;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-size: 1.2rem;
+      font-weight: 700;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      transition: transform 0.2s, background-color 0.2s;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    }
+
+    .btn-massive-wa:hover {
+      transform: scale(1.02);
+      background-color: #1ebc57;
+      color: white;
+    }
+
+    .btn-small-chat {
+      width: 50px;
+      height: 50px;
+      background-color: #FFC107;
+      color: black;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      text-decoration: none;
+      flex-shrink: 0;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+      border: 2px solid white;
+      z-index: 10;
+    }
+    .btn-small-chat:hover {
+      background-color: #ffca2c;
+      transform: scale(1.1);
+    }
+
+    @media (min-width: 992px) {
+      .sticky-bottom-bar {
+        height: 100px;
+        padding: 0 50px;
+      }
+      .big-buttons-container {
+        max-width: 1200px;
+      }
+      .btn-massive-call, .btn-massive-wa {
+        font-size: 1.8rem;
+        height: 80px;
+      }
+    }
+
+    /* ===== FOOTER ===== */
+    .main-footer {
+      background-color: #000;
+      color: #bbb;
+      padding: 60px 0 20px 0;
+      font-size: 0.9rem;
+      border-top: 4px solid var(--gp-blood-red);
+    }
+    
+    .footer-logo-box {
+      background-color: var(--gp-blood-red);
+      width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+    .footer-logo-box i {
+      font-size: 1.8rem;
+      color: white;
+    }
+
+    .footer-title {
+      color: white;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+      font-size: 1.1rem;
+      border-bottom: 2px solid var(--gp-blood-red);
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    .footer-links ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    
+    .footer-links li {
+      margin-bottom: 10px;
+    }
+    
+    .footer-links a {
+      color: #bbb;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    
+    .footer-links a:hover {
+      color: var(--gp-blood-red);
+      padding-left: 5px;
+    }
+
+    .contact-info-item {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 15px;
+    }
+    
+    .contact-info-item i {
+      color: var(--gp-blood-red);
+      margin-right: 10px;
+      margin-top: 5px;
+    }
+
+    .social-icons a {
+      display: inline-flex;
+      width: 35px;
+      height: 35px;
+      background-color: #333;
+      color: white;
+      border-radius: 50%;
+      align-items: center;
+      justify-content: center;
+      margin-right: 10px;
+      transition: 0.3s;
+      text-decoration: none;
+    }
+    
+    .social-icons a:hover {
+      background-color: var(--gp-blood-red);
+      transform: translateY(-3px);
+    }
+
+    .copyright-bar {
+      background-color: #0a0a0a;
+      padding: 15px 0;
+      margin-top: 40px;
+      border-top: 1px solid #333;
+      text-align: center;
+      font-size: 0.85rem;
+    }
+
+    @media (max-width: 768px) {
+      .page-hero h1 {
+        font-size: 2rem;
+      }
+      .section-title {
+        font-size: 1.6rem;
+      }
+      .stat-number {
+        font-size: 2rem;
+      }
+      .rating-number {
+        font-size: 3rem;
+      }
+      .about-image-wrapper img {
+        height: 250px;
+      }
+      .about-content h2 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "GLOBAL PRO Automotriz",
+    "image": "https://globalpro.pages.dev/images/mecanico-a-domicilio-en-santiago.png",
+    "telephone": "+56 9 3902 6185",
+    "email": "contacto@globalpro.cl",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Av. Padre Alberto Hurtado 3598",
+      "addressLocality": "Pedro Aguirre Cerda",
+      "addressRegion": "Region Metropolitana",
+      "postalCode": "1080000",
+      "addressCountry": "CL"
+    },
+    "url": "https://globalpro.pages.dev",
+    "description": "MECANICO A DOMICILIO 24/7 | Especialistas en Motor Frenos y Electricidad de su vehiculo",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "141"
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+      "opens": "00:00",
+      "closes": "23:59"
+    }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://globalpro.pages.dev/"},
+      {"@type": "ListItem", "position": 2, "name": "Quienes Somos", "item": "https://globalpro.pages.dev/quienes-somos.html"}
+    ]
+  }
+  </script>
+</head>
+<body>
+
+<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "41608a73d5524531804ac808fbf45439"}'></script><!-- End Cloudflare Web Analytics -->
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NK35S8FG"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <div class="container nav-container">
+    <a href="index.html" class="logo d-flex align-items-center text-decoration-none text-white">
+      <!-- LOGO: CAJA ROJO SANGRE -->
+      <div class="logo-img">
+        <i class="fas fa-wrench"></i>
+      </div>
+      <div>
+        <div class="logo-text" style="font-weight:800;font-size:1.2rem;letter-spacing:1px;">GLOBALPRO</div>
+        <div class="logo-subtext" style="font-size:0.75rem;opacity:0.8;">Taller Mecanico</div>
+      </div>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse desktop-menu" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html#mecanico-domicilio-seo">Mecanico a Domicilio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html#servicios">Servicios</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="comunasDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Comunas
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="comunasDropdown" style="max-height: 400px; overflow-y: auto;">
+            <li><a class="dropdown-item" href="contacto.html">Alhue</a></li><li><a class="dropdown-item" href="contacto.html">Buin</a></li><li><a class="dropdown-item" href="contacto.html">Calera de Tango</a></li><li><a class="dropdown-item" href="contacto.html">Cerrillos</a></li><li><a class="dropdown-item" href="contacto.html">Cerro Navia</a></li><li><a class="dropdown-item" href="contacto.html">Colina</a></li><li><a class="dropdown-item" href="contacto.html">Conchali</a></li><li><a class="dropdown-item" href="contacto.html">Curacavi</a></li><li><a class="dropdown-item" href="contacto.html">El Bosque</a></li><li><a class="dropdown-item" href="contacto.html">El Monte</a></li><li><a class="dropdown-item" href="contacto.html">Estacion Central</a></li><li><a class="dropdown-item" href="contacto.html">Huechuraba</a></li><li><a class="dropdown-item" href="contacto.html">Independencia</a></li><li><a class="dropdown-item" href="contacto.html">Isla de Maipo</a></li><li><a class="dropdown-item" href="contacto.html">La Cisterna</a></li><li><a class="dropdown-item" href="contacto.html">La Florida</a></li><li><a class="dropdown-item" href="contacto.html">La Granja</a></li><li><a class="dropdown-item" href="contacto.html">La Pintana</a></li><li><a class="dropdown-item" href="contacto.html">La Reina</a></li><li><a class="dropdown-item" href="contacto.html">Las Condes</a></li><li><a class="dropdown-item" href="contacto.html">Lampa</a></li><li><a class="dropdown-item" href="contacto.html">Lo Barnechea</a></li><li><a class="dropdown-item" href="contacto.html">Lo Espejo</a></li><li><a class="dropdown-item" href="contacto.html">Lo Prado</a></li><li><a class="dropdown-item" href="contacto.html">Macul</a></li><li><a class="dropdown-item" href="contacto.html">Maipu</a></li><li><a class="dropdown-item" href="contacto.html">Maria Pinto</a></li><li><a class="dropdown-item" href="contacto.html">Melipilla</a></li><li><a class="dropdown-item" href="contacto.html">Nunoa</a></li><li><a class="dropdown-item" href="contacto.html">Padre Hurtado</a></li><li><a class="dropdown-item" href="contacto.html">Paine</a></li><li><a class="dropdown-item" href="contacto.html">Pedro Aguirre Cerda</a></li><li><a class="dropdown-item" href="contacto.html">Penaflor</a></li><li><a class="dropdown-item" href="contacto.html">Penalolen</a></li><li><a class="dropdown-item" href="contacto.html">Pirque</a></li><li><a class="dropdown-item" href="contacto.html">Providencia</a></li><li><a class="dropdown-item" href="contacto.html">Pudahuel</a></li><li><a class="dropdown-item" href="contacto.html">Puente Alto</a></li><li><a class="dropdown-item" href="contacto.html">Quilicura</a></li><li><a class="dropdown-item" href="contacto.html">Quinta Normal</a></li><li><a class="dropdown-item" href="contacto.html">Recoleta</a></li><li><a class="dropdown-item" href="contacto.html">Renca</a></li><li><a class="dropdown-item" href="contacto.html">San Bernardo</a></li><li><a class="dropdown-item" href="contacto.html">San Joaquin</a></li><li><a class="dropdown-item" href="contacto.html">San Jose de Maipo</a></li><li><a class="dropdown-item" href="contacto.html">San Miguel</a></li><li><a class="dropdown-item" href="contacto.html">San Pedro</a></li><li><a class="dropdown-item" href="contacto.html">San Ramon</a></li><li><a class="dropdown-item" href="contacto.html">Santiago</a></li><li><a class="dropdown-item" href="contacto.html">Talagante</a></li><li><a class="dropdown-item" href="contacto.html">Tiltil</a></li><li><a class="dropdown-item" href="contacto.html">Vitacura</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="quienes-somos.html">Quienes Somos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contacto.html">Contacto</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="blog/index.html">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="faq.html">FAQ</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="politica-privacidad.html">Privacidad</a>
+        </li>
+        <li class="nav-item">
+          <a href="https://wa.me/56939026185" class="nav-link" target="_blank" style="color:#25D366 !important;">
+            <i class="fab fa-whatsapp me-1"></i> WhatsApp
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<!-- ======================================================================= -->
+<!-- HERO BANNER -->
+<!-- ======================================================================= -->
+<section class="page-hero">
+  <div class="container">
+    <h1><i class="fas fa-users me-3"></i>Quienes Somos</h1>
+    <p>Conoce la historia detras de GLOBAL PRO Automotriz, el servicio de mecanico a domicilio mas confiable de Santiago.</p>
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Quienes Somos</li>
+      </ol>
+    </nav>
+  </div>
+</section>
+
+
+<!-- ======================================================================= -->
+<!-- ABOUT SECTION -->
+<!-- ======================================================================= -->
+<section class="about-section" id="nosotros">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6">
+        <div class="about-image-wrapper">
+          <img src="images/image2.png" alt="Equipo GlobalPro Automotriz - Mecanico a domicilio en Santiago" class="img-fluid">
+          <div class="about-image-badge">
+            <i class="fas fa-clock me-2"></i>24/7
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="about-content">
+          <h2>Somos <span style="color:var(--gp-blood-red);">GLOBAL PRO</span> Automotriz</h2>
+          <p>
+            Somos un <strong>taller de reparacion de automoviles</strong> con mas de <strong>15 anos de experiencia</strong> en el mercado automotriz chileno. Nos especializamos en brindar un servicio de <strong>mecanico a domicilio 24/7</strong> en toda la <strong>Region Metropolitana de Santiago</strong>, con sede en <strong>Pedro Aguirre Cerda</strong>.
+          </p>
+          <p>
+            Nuestro equipo de tecnicos certificados esta capacitado para resolver cualquier problema mecanico, electrico o de frenos que presente tu vehiculo. Desde un cambio de aceite hasta una reparacion compleja de motor, nos desplazamos hasta donde tu estes con todas las herramientas y equipos de diagnostico necesarios.
+          </p>
+          <p>
+            En <strong>GLOBAL PRO Automotriz</strong>, creemos que la comodidad del cliente es primordial. Por eso, llevamos el taller hasta tu puerta, ahorrandote tiempo, esfuerzo y dinero. Nuestros mas de <strong>1000 autos reparados</strong> y la confianza de cientos de clientes satisfechos respaldan nuestro compromiso con la excelencia.
+          </p>
+
+          <div class="mt-4">
+            <div class="about-feature">
+              <div class="about-feature-icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div>
+                <h6>Ubicacion Estrategica</h6>
+                <p>Av. Padre Alberto Hurtado 3598, Pedro Aguirre Cerda, Santiago.</p>
+              </div>
+            </div>
+            <div class="about-feature">
+              <div class="about-feature-icon"><i class="fas fa-tools"></i></div>
+              <div>
+                <h6>Especialistas en Motor, Frenos y Electricidad</h6>
+                <p>Diagnostico computarizado y reparacion de cualquier sistema automotriz.</p>
+              </div>
+            </div>
+            <div class="about-feature">
+              <div class="about-feature-icon"><i class="fas fa-clock"></i></div>
+              <div>
+                <h6>Disponibles 24 Horas, 7 Dias</h6>
+                <p>Emergencias mecanicas en cualquier momento del dia o la noche.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ======================================================================= -->
+<!-- STATS SECTION -->
+<!-- ======================================================================= -->
+<section class="stats-section" id="estadisticas">
+  <div class="container">
+    <div class="row">
+      <div class="col-6 col-lg-3">
+        <div class="stat-card">
+          <div class="stat-icon">
+            <i class="fas fa-car"></i>
+          </div>
+          <div class="stat-number">+1000</div>
+          <div class="stat-label">Autos Reparados</div>
+        </div>
+      </div>
+      <div class="col-6 col-lg-3">
+        <div class="stat-card">
+          <div class="stat-icon">
+            <i class="fas fa-award"></i>
+          </div>
+          <div class="stat-number">+15</div>
+          <div class="stat-label">Anos de Experiencia</div>
+        </div>
+      </div>
+      <div class="col-6 col-lg-3">
+        <div class="stat-card">
+          <div class="stat-icon">
+            <i class="fas fa-star"></i>
+          </div>
+          <div class="stat-number">4.9</div>
+          <div class="stat-label">Rating Google</div>
+        </div>
+      </div>
+      <div class="col-6 col-lg-3">
+        <div class="stat-card">
+          <div class="stat-icon">
+            <i class="fas fa-clock"></i>
+          </div>
+          <div class="stat-number">24/7</div>
+          <div class="stat-label">Siempre Disponibles</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ======================================================================= -->
+<!-- MISSION & VISION -->
+<!-- ======================================================================= -->
+<section class="mv-section">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 style="color:#fff;font-weight:800;font-size:2.2rem;text-transform:uppercase;margin-bottom:1rem;">Nuestra Mision y Vision</h2>
+      <p style="color:rgba(255,255,255,0.7);max-width:600px;margin:0 auto;">Los pilares que guian cada servicio que realizamos para nuestros clientes.</p>
+    </div>
+    <div class="row g-4">
+      <div class="col-lg-6">
+        <div class="mv-card">
+          <div class="mv-card-icon">
+            <i class="fas fa-bullseye"></i>
+          </div>
+          <h3>Nuestra Mision</h3>
+          <p>
+            Brindar un servicio automotriz de excelencia, accesible y confiable a todos los conductores de Santiago. Nos comprometemos a llevar la mejor atencion mecanica directamente al lugar donde se encuentre tu vehiculo, resolviendo problemas de motor, frenos y electricidad con rapidez, profesionalismo y garantia. Nuestro objetivo es que cada cliente experimente tranquilidad y seguridad en cada intervencion.
+          </p>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="mv-card">
+          <div class="mv-card-icon">
+            <i class="fas fa-eye"></i>
+          </div>
+          <h3>Nuestra Vision</h3>
+          <p>
+            Ser el referente numero uno en servicios de mecanica a domicilio en Chile, reconocidos por nuestra calidad tecnica, innovacion constante y compromiso con la satisfaccion total del cliente. Aspiramos a expandir nuestra cobertura a lo largo de todo el pais, manteniendo siempre los estandares de calidad y transparencia que nos caracterizan.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ======================================================================= -->
+<!-- VALUES SECTION -->
+<!-- ======================================================================= -->
+<section class="py-5 bg-white" id="valores">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="section-title">Nuestros Valores</h2>
+      <p class="section-subtitle">Los principios que definen nuestro trabajo diario y nuestra relacion con cada cliente.</p>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-3">
+        <div class="value-card">
+          <div class="value-icon">
+            <i class="fas fa-user-tie"></i>
+          </div>
+          <h4>Profesionalismo</h4>
+          <p>Cada uno de nuestros tecnicos cuenta con certificacion y anos de experiencia. Trabajamos con estandares profesionales en cada diagnostico y reparacion, garantizando resultados excepcionales.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="value-card">
+          <div class="value-icon">
+            <i class="fas fa-handshake"></i>
+          </div>
+          <h4>Transparencia</h4>
+          <p>Creemos en la comunicacion abierta con nuestros clientes. Cada presupuesto es claro y detallado, sin costos ocultos ni sorpresas. Tu apruebas cada reparacion antes de que la realicemos.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="value-card">
+          <div class="value-icon">
+            <i class="fas fa-medal"></i>
+          </div>
+          <h4>Calidad</h4>
+          <p>Utilizamos repuestos de primera calidad y herramientas de diagnostico de ultima generacion. Cada servicio queda respaldado por nuestra garantia, porque confiamos plenamente en lo que hacemos.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="value-card">
+          <div class="value-icon">
+            <i class="fas fa-shield-alt"></i>
+          </div>
+          <h4>Compromiso</h4>
+          <p>Nos comprometemos con tu seguridad y la de tu vehiculo. Disponibles las 24 horas del dia, los 7 dias de la semana, porque entendemos que una emergencia mecanica no espera.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ======================================================================= -->
+<!-- GOOGLE RATING SECTION -->
+<!-- ======================================================================= -->
+<section class="rating-section" id="rating-google">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="section-title">Respaldo de Nuestros Clientes</h2>
+      <p class="section-subtitle">La mejor prueba de nuestro trabajo son las opiniones de quienes ya confiaron en nosotros.</p>
+    </div>
+
+    <div class="rating-badge">
+      <svg class="google-logo" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z" fill="#4285F4"/>
+        <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+        <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/>
+        <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
+      </svg>
+
+      <div class="rating-stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+      </div>
+
+      <div class="rating-number">4.9</div>
+      <div class="rating-total">basado en 141 opiniones de Google</div>
+
+      <div style="max-width:300px;margin:0 auto;">
+        <div class="rating-bar-label">
+          <span>5 estrellas</span>
+          <span>92%</span>
+        </div>
+        <div class="rating-bar-container">
+          <div class="rating-bar-fill" style="width:92%;"></div>
+        </div>
+        <div class="rating-bar-label">
+          <span>4 estrellas</span>
+          <span>6%</span>
+        </div>
+        <div class="rating-bar-container">
+          <div class="rating-bar-fill" style="width:6%;"></div>
+        </div>
+        <div class="rating-bar-label">
+          <span>3 estrellas</span>
+          <span>2%</span>
+        </div>
+        <div class="rating-bar-container">
+          <div class="rating-bar-fill" style="width:2%;"></div>
+        </div>
+      </div>
+
+      <a href="https://wa.me/56939026185?text=Hola%20vi%20su%20rating%20en%20Google%20y%20quiero%20agendar%20un%20servicio" class="btn btn-primary mt-4 fw-bold" target="_blank">
+        <i class="fab fa-whatsapp me-2"></i> Agendar Servicio Ahora
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ======================================================================= -->
+<!-- WHY CHOOSE US SECTION -->
+<!-- ======================================================================= -->
+<section class="py-5 bg-white" id="por-que-elegirnos">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="section-title">Por Que Elegir GlobalPro</h2>
+      <p class="section-subtitle">Razones solidas para confiar en nuestro servicio automotriz.</p>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-6">
+        <div class="d-flex align-items-start gap-3 p-4 bg-white rounded shadow-sm" style="border-left:4px solid var(--gp-blood-red);">
+          <div style="min-width:55px;height:55px;border-radius:12px;background:var(--gp-blood-red);display:flex;align-items:center;justify-content:center;color:#fff;font-size:1.3rem;flex-shrink:0;">
+            <i class="fas fa-truck-moving"></i>
+          </div>
+          <div>
+            <h6 class="fw-bold text-dark mb-1">Servicio a Domicilio Completo</h6>
+            <p class="small text-muted mb-0">Llevamos el taller a tu ubicacion. No necesitas mover tu vehiculo, nosotros llegamos con todo el equipamiento necesario.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="d-flex align-items-start gap-3 p-4 bg-white rounded shadow-sm" style="border-left:4px solid var(--gp-blood-red);">
+          <div style="min-width:55px;height:55px;border-radius:12px;background:var(--gp-blood-red);display:flex;align-items:center;justify-content:center;color:#fff;font-size:1.3rem;flex-shrink:0;">
+            <i class="fas fa-laptop-medical"></i>
+          </div>
+          <div>
+            <h6 class="fw-bold text-dark mb-1">Diagnostico Computarizado</h6>
+            <p class="small text-muted mb-0">Escaneamos tu vehiculo con tecnologia de ultima generacion para identificar fallas de forma precisa y rapida.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="d-flex align-items-start gap-3 p-4 bg-white rounded shadow-sm" style="border-left:4px solid var(--gp-blood-red);">
+          <div style="min-width:55px;height:55px;border-radius:12px;background:var(--gp-blood-red);display:flex;align-items:center;justify-content:center;color:#fff;font-size:1.3rem;flex-shrink:0;">
+            <i class="fas fa-dollar-sign"></i>
+          </div>
+          <div>
+            <h6 class="fw-bold text-dark mb-1">Precios Justos y Transparentes</h6>
+            <p class="small text-muted mb-0">Presupuesto claro antes de comenzar. Sin costos ocultos ni sorpresas al momento de pagar.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="d-flex align-items-start gap-3 p-4 bg-white rounded shadow-sm" style="border-left:4px solid var(--gp-blood-red);">
+          <div style="min-width:55px;height:55px;border-radius:12px;background:var(--gp-blood-red);display:flex;align-items:center;justify-content:center;color:#fff;font-size:1.3rem;flex-shrink:0;">
+            <i class="fas fa-shield-alt"></i>
+          </div>
+          <div>
+            <h6 class="fw-bold text-dark mb-1">Garantia en Todo Nuestro Trabajo</h6>
+            <p class="small text-muted mb-0">Cada reparacion cuenta con garantia. Confiamos en la calidad de nuestro servicio y lo respaldamos.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="d-flex align-items-start gap-3 p-4 bg-white rounded shadow-sm" style="border-left:4px solid var(--gp-blood-red);">
+          <div style="min-width:55px;height:55px;border-radius:12px;background:var(--gp-blood-red);display:flex;align-items:center;justify-content:center;color:#fff;font-size:1.3rem;flex-shrink:0;">
+            <i class="fas fa-moon"></i>
+          </div>
+          <div>
+            <h6 class="fw-bold text-dark mb-1">Disponibles 24/7</h6>
+            <p class="small text-muted mb-0">Emergencias no respetan horarios. Nosotros tampoco. Atendemos las 24 horas, los 365 dias del ano.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="d-flex align-items-start gap-3 p-4 bg-white rounded shadow-sm" style="border-left:4px solid var(--gp-blood-red);">
+          <div style="min-width:55px;height:55px;border-radius:12px;background:var(--gp-blood-red);display:flex;align-items:center;justify-content:center;color:#fff;font-size:1.3rem;flex-shrink:0;">
+            <i class="fas fa-map-marked-alt"></i>
+          </div>
+          <div>
+            <h6 class="fw-bold text-dark mb-1">Cobertura en Toda Santiago</h6>
+            <p class="small text-muted mb-0">Nos desplazamos a todas las comunas de la Region Metropolitana. Donde sea que estes, alli llegamos.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ======================================================================= -->
+<!-- CTA SECTION -->
+<!-- ======================================================================= -->
+<section class="py-5 text-center" style="background:linear-gradient(135deg, var(--gp-blood-red) 0%, #800000 100%); color:white;">
+  <div class="container">
+    <h2 style="font-weight:800;font-size:2rem;margin-bottom:1rem;">Necesitas un Mecanico de Confianza?</h2>
+    <p style="font-size:1.15rem;max-width:600px;margin:0 auto 2rem;opacity:0.9;">Contactanos ahora y recibe atencion profesional en la puerta de tu casa. Respuesta rapida y garantia en cada servicio.</p>
+    <div class="d-flex justify-content-center gap-3 flex-wrap">
+      <a href="tel:939026185" class="btn btn-light btn-lg fw-bold" style="color:var(--gp-blood-red);">
+        <i class="fas fa-phone-alt me-2"></i> Llamar Ahora
+      </a>
+      <a href="https://wa.me/56939026185?text=Hola%20quiero%20agendar%20un%20servicio%20mecanico%20a%20domicilio" class="btn btn-lg fw-bold" target="_blank" style="background-color:#25D366;color:white;border:none;">
+        <i class="fab fa-whatsapp me-2"></i> WhatsApp
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ======================================================================= -->
+<!-- FOOTER -->
+<!-- ======================================================================= -->
+<footer class="main-footer">
+  <div class="container">
+    <div class="row">
+      <!-- COLUMNA 1: SOBRE NOSOTROS -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="footer-logo-box">
+          <i class="fas fa-wrench"></i>
+        </div>
+        <h5 class="footer-title">GlobalPro</h5>
+        <p class="text-justify">
+          Somos lideres en <strong>Mecanico a Domicilio</strong> en Santiago. Ofrecemos servicio automotriz integral con tecnologia de punta y profesionales certificados. Tu vehiculo en las mejores manos, donde tu estes.
+        </p>
+        <div class="social-icons mt-3">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="https://wa.me/56939026185" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <!-- COLUMNA 2: ENLACES RAPIDOS -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <h5 class="footer-title">Enlaces Rapidos</h5>
+        <div class="footer-links">
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="index.html#mecanico-domicilio-seo">Mecanico a Domicilio</a></li>
+            <li><a href="index.html#servicios">Nuestros Servicios</a></li>
+            <li><a href="quienes-somos.html">Quienes Somos</a></li>
+            <li><a href="faq.html">Preguntas Frecuentes</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- COLUMNA 3: CONTACTO -->
+      <div class="col-lg-4 col-md-12 mb-4">
+        <h5 class="footer-title">Informacion de Contacto</h5>
+        
+        <div class="contact-info-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <div>
+            <strong>Ubicacion:</strong><br>
+            Av. Padre Alberto Hurtado 3598<br>
+            1080000 Pedro Aguirre Cerda<br>
+            Region Metropolitana, Chile
+          </div>
+        </div>
+
+        <div class="contact-info-item">
+          <i class="fas fa-phone-alt"></i>
+          <div>
+            <strong>Telefono:</strong><br>
+            <a href="tel:+56939026185" style="color:#bbb; text-decoration:none;">+56 9 3902 6185</a>
+          </div>
+        </div>
+
+        <div class="contact-info-item">
+          <i class="fas fa-clock"></i>
+          <div>
+            <strong>Horario:</strong><br>
+            Abierto las 24 horas
+          </div>
+        </div>
+
+        <div class="contact-info-item">
+          <i class="fas fa-globe"></i>
+          <div>
+            <strong>Web:</strong><br>
+            <a href="https://globalpro.pages.dev" style="color:#bbb; text-decoration:none;">globalpro.pages.dev</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- BARRA DE COPYRIGHT -->
+  <div class="copyright-bar">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 text-center text-md-start">
+          &copy; 2024 GlobalPro. Todos los derechos reservados.
+        </div>
+        <div class="col-md-6 text-center text-md-end">
+          Especialistas en <strong>Mecanico a Domicilio</strong> | Servicio Automotriz Integral
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<!-- ======================================================================= -->
+<!-- STICKY BOTTOM BAR -->
+<!-- ======================================================================= -->
+<div class="sticky-bottom-bar">
+  <div class="big-buttons-container">
+    
+    <!-- Boton Llamada (Rojo Grande) -->
+    <a href="tel:939026185" class="btn-massive-call">
+      <i class="fas fa-phone-alt"></i> LLAMAR
+    </a>
+
+    <!-- Boton Chat IA (Centro Pequeno) -->
+    <a href="index.html" class="btn-small-chat" title="Inicio">
+      <i class="fas fa-home"></i>
+    </a>
+
+    <!-- Boton WhatsApp (Verde Grande) -->
+    <a href="https://wa.me/56939026185?text=Hola%20te%20escribo%20desde%20la%20pagina%20web%20estoy%20interesado%20en%20tus%20servicios" class="btn-massive-wa" target="_blank">
+      <i class="fab fa-whatsapp"></i> WhatsApp
+    </a>
+
+  </div>
+</div>
+
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Custom JS -->
+<script src="js/script.js"></script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const counterElement = document.getElementById('live-count');
+    
+    let baseVisitas = 123; 
+    
+    let visitasGuardadas = localStorage.getItem('global_total_visits');
+    
+    if (!visitasGuardadas) {
+      visitasGuardadas = baseVisitas;
+    } else {
+      visitasGuardadas = parseInt(visitasGuardadas);
+    }
+
+    if (!sessionStorage.getItem('session_active')) {
+      visitasGuardadas += 1;
+      localStorage.setItem('global_total_visits', visitasGuardadas);
+      sessionStorage.setItem('session_active', 'true');
+    }
+
+    counterElement.innerText = visitasGuardadas.toLocaleString('es-CL');
+  });
+</script>
+
+
+</body>
+</html>
